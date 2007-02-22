@@ -57,4 +57,5 @@
 <VASSAL.build.module.PrototypesContainer/>
 <VASSAL.build.module.PieceWindow hidden="false" hotkey="" text="Pieces"/>
 <VASSAL.build.module.Chatter/>
+<VASSAL.build.module.GlobalKeyCommand buttonHotkey="112,130" buttonText="" deckCount="-1" hotkey="" icon="" name="SVN Info" reportFormat="$svnid$" reportSingle="false" tooltip=""/>
 </VASSAL.build.GameModule>
