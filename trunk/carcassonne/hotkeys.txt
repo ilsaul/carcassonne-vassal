@@ -1,1 +1,4 @@
-CTRL-F1   Display SVN Info
+C      F1   Display SVN Info
+C      G    Toggle Game Window
+C-A-S  M    Triggered on peices that move to the game window
+C-A-S  N    Triggered on peices that move to the main map
