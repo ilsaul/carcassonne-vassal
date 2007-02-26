@@ -1,0 +1,4 @@
+## Configuration file for building this VASSAL module
+---
+name: carcassonne
+version: 2.0

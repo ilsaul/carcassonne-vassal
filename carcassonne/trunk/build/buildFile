@@ -2,16 +2,15 @@
 <VASSAL.build.GameModule VassalVersion="2.9.9" name="Carcassonne" version="2.0 ($Rev$)">
 <VASSAL.build.module.BasicCommandEncoder/>
 <VASSAL.build.module.Documentation>
-<VASSAL.build.module.documentation.AboutScreen fileName="about.png" title="About Carcassonne"/>
-<VASSAL.build.module.documentation.HelpFile fileName="/help/Intro.html" fileType="resource" title="Quick Start"/>
+<VASSAL.build.module.documentation.AboutScreen fileName="about.png" title="LANG:About Carcassonne"/>
 </VASSAL.build.module.Documentation>
-<VASSAL.build.module.PlayerRoster buttonText="Join/Leave" buttonToolTip="Join this game or allow another player to take your side in this game">
-<entry>Red</entry>
-<entry>Black</entry>
-<entry>Green</entry>
-<entry>Blue</entry>
-<entry>Yellow</entry>
-<entry>Grey</entry>
+<VASSAL.build.module.PlayerRoster buttonText="LANG:Join/Leave" buttonToolTip="LANG:Join this game or allow another player to take your side in this game">
+<entry>LANG:Red</entry>
+<entry>LANG:Black</entry>
+<entry>LANG:Green</entry>
+<entry>LANG:Blue</entry>
+<entry>LANG:Yellow</entry>
+<entry>LANG:Grey</entry>
 </VASSAL.build.module.PlayerRoster>
 <VASSAL.build.module.GlobalOptions autoReport="Always" centerOnMove="Always" nonOwnerUnmaskable="Never" playerIdFormat="$playerName$ ($playerSide$)" promptString="Opponents can unmask my pieces">
 <option name="stepIcon">/images/StepForward16.gif</option>
@@ -59,7 +58,7 @@
 </VASSAL.build.module.PrototypesContainer>
 <VASSAL.build.module.Chatter/>
 <VASSAL.build.module.GlobalKeyCommand buttonHotkey="112,130" buttonText="" deckCount="-1" hotkey="" icon="" name="SVN Info" reportFormat="$svnid$" reportSingle="false" tooltip=""/>
-<VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="Game Window" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="71,130" icon="" launch="true" mapName="Game Window" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" moveWithinFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" side="Red,Black,Green,Blue,Yellow,Grey" thickness="3" visible="true">
+<VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="Game Window" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="71,130" icon="" launch="true" mapName="Game Window" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" moveWithinFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" side="LANG:Red,LANG:Black,LANG:Green,LANG:Blue,LANG:Yellow,LANG:Grey" thickness="3" visible="true">
 <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
 <VASSAL.build.module.map.boardPicker.Board color="153,153,255" height="500" name="gwBoard" reversible="false" width="500"/>
 </VASSAL.build.module.map.BoardPicker>

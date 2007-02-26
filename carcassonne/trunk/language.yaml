@@ -1,0 +1,29 @@
+## Language translation map for this VASSAL module
+---
+langs:
+  English:
+    abbr: en
+#  Espanol:
+#    abbr: es
+phrases:
+#  - phrase: LANG:the phrase
+#    en: The Phrase in en
+#    es: The Phrase in es
+  - phrase: About Carcassonne
+    en: About Carcassonne
+  - phrase: Join/Leave
+    en: Join/Leave
+  - phrase: Join this game or allow another player to take your side in this game
+    en: Join this game or allow another player to take your side in this game
+  - phrase: Red
+    en: Red
+  - phrase: Black
+    en: Black
+  - phrase: Green
+    en: Green
+  - phrase: Blue
+    en: Blue
+  - phrase: Yellow
+    en: Yellow
+  - phrase: Grey
+    en: Grey
