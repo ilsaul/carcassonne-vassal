@@ -1,0 +1,14 @@
+## Language translation map for VASSAL modules
+---
+langs:
+  English:
+    abbr: en
+  Espanol:
+    abbr: es
+phrases:
+  - phrase: LANG_the phrase (without the LANG_)
+    en: The phrase in en
+    es: The phrase in es
+  - phrase: LANG_the second phrase (without the LANG_)
+    en: The second phrase in en
+    es: The second phrase in es
