@@ -59,9 +59,9 @@ sub build_langs {
       foreach my $line (@module_data) {
         foreach my $p (@{ $lang->{phrases} }) {
           my ($phrase,$replacement) = (quotemeta($p->{phrase}),$p->{$abbr});
-          $line =~ s/LANG:${phrase}/$replacement/;
+          $line =~ s/LANG_${phrase}/$replacement/g;
         }
-        if ($line =~ m/(LANG:.*)\b/) {
+        if ($line =~ m/(LANG_.*)\b/) {
           mydie("No $abbr translation found for ->$1<-");
         }
         print $FH $line;

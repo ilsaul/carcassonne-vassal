@@ -6,7 +6,7 @@ langs:
 #  Espanol:
 #    abbr: es
 phrases:
-#  - phrase: LANG:the phrase
+#  - phrase: LANG_the phrase (without the LANG_)
 #    en: The Phrase in en
 #    es: The Phrase in es
   - phrase: About Carcassonne
@@ -27,3 +27,7 @@ phrases:
     en: Yellow
   - phrase: Grey
     en: Grey
+  - phrase: English
+    en: English
+  - phrase: Game Window
+    en: Game Window

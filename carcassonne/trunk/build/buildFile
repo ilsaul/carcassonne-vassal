@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VASSAL.build.GameModule VassalVersion="2.9.9" name="Carcassonne" version="2.0 ($Rev$)">
+<VASSAL.build.GameModule VassalVersion="2.9.9" name="Carcassonne" version="2.0 (LANG:English) ($Rev$)">
 <VASSAL.build.module.BasicCommandEncoder/>
 <VASSAL.build.module.Documentation>
-<VASSAL.build.module.documentation.AboutScreen fileName="about.png" title="LANG:About Carcassonne"/>
+<VASSAL.build.module.documentation.AboutScreen fileName="about.png" title="LANG_About Carcassonne"/>
 </VASSAL.build.module.Documentation>
-<VASSAL.build.module.PlayerRoster buttonText="LANG:Join/Leave" buttonToolTip="LANG:Join this game or allow another player to take your side in this game">
-<entry>LANG:Red</entry>
-<entry>LANG:Black</entry>
-<entry>LANG:Green</entry>
-<entry>LANG:Blue</entry>
-<entry>LANG:Yellow</entry>
-<entry>LANG:Grey</entry>
+<VASSAL.build.module.PlayerRoster buttonText="LANG_Join/Leave" buttonToolTip="LANG_Join this game or allow another player to take your side in this game">
+<entry>LANG_Red</entry>
+<entry>LANG_Black</entry>
+<entry>LANG_Green</entry>
+<entry>LANG_Blue</entry>
+<entry>LANG_Yellow</entry>
+<entry>LANG_Grey</entry>
 </VASSAL.build.module.PlayerRoster>
 <VASSAL.build.module.GlobalOptions autoReport="Always" centerOnMove="Always" nonOwnerUnmaskable="Never" playerIdFormat="$playerName$ ($playerSide$)" promptString="Opponents can unmask my pieces">
 <option name="stepIcon">/images/StepForward16.gif</option>
@@ -19,7 +19,7 @@
 <option name="serverControlsIcon">/images/connect.gif</option>
 <option name="serverControlsHotKey">83,520</option>
 </VASSAL.build.module.GlobalOptions>
-<VASSAL.build.module.Map allowMultiple="false" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="Main Map" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="78,715" moveToFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" moveWithinFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" thickness="3">
+<VASSAL.build.module.Map allowMultiple="false" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="Main Map" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" moveWithinFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" thickness="3">
 <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
 <VASSAL.build.module.map.boardPicker.Board color="255,255,255" height="3100" name="Table" reversible="false" width="3100">
 <VASSAL.build.module.map.boardPicker.board.SquareGrid color="204,204,204" cornersLegal="false" dotsVisible="false" dx="100.0" dy="100.0" edgesLegal="false" visible="true" x0="50" y0="50"/>
@@ -52,17 +52,55 @@
 <VASSAL.build.module.properties.GlobalProperties>
 <VASSAL.build.module.properties.GlobalProperty description="SVN Id keyword" initialValue="$Id$" isNumeric="false" max="null" min="null" name="svnid" wrap="false"/>
 <VASSAL.build.module.properties.GlobalProperty description="SVN Rev keyword" initialValue="$Rev$" isNumeric="false" max="null" min="null" name="svnrev" wrap="false"/>
+<VASSAL.build.module.properties.GlobalProperty initialValue="0" isNumeric="true" max="100" min="0" name="red_cloth" wrap="false"/>
 </VASSAL.build.module.properties.GlobalProperties>
 <VASSAL.build.module.PrototypesContainer>
-<VASSAL.build.module.PrototypeDefinition name="testproto">+/null/sendto;;85,130;Main Map;Table;300;300;;;0;0;0;0;	sendto;;73,130;Game Window;gwBoard;300;300;;;0;0;0;0;\	piece;;;;/;;	;;\	null;253;0</VASSAL.build.module.PrototypeDefinition>
+<VASSAL.build.module.PrototypeDefinition name="testproto">+/null/sendto;;85,130;Main Map;Table;300;300;;;0;0;0;0;	sendto;;73,130;LANG_Game Window;gwBoard;300;300;;;0;0;0;0;\	piece;;;;/;;	;;\	null;253;0</VASSAL.build.module.PrototypeDefinition>
+<VASSAL.build.module.PrototypeDefinition name="chit">+/null/report;89\,130;CTRLY $location$: $newPieceName$ *;;;	globalkey;;77,715;89,130;chitcounter = true;false;1;false;true;;;-1\	label;;Change Label;10;;0,0,0;t;0;c;0;b;c;$pieceName$ ($label$);Dialog;1;0;TextLabel\\	obs;;chitback.png;;P;;player:\\\	piece;;;;/-1	\	AT $LocationName$\\	null\\\	null;287;7</VASSAL.build.module.PrototypeDefinition>
 </VASSAL.build.module.PrototypesContainer>
 <VASSAL.build.module.Chatter/>
 <VASSAL.build.module.GlobalKeyCommand buttonHotkey="112,130" buttonText="" deckCount="-1" hotkey="" icon="" name="SVN Info" reportFormat="$svnid$" reportSingle="false" tooltip=""/>
-<VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="Game Window" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="71,130" icon="" launch="true" mapName="Game Window" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" moveWithinFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" side="LANG:Red,LANG:Black,LANG:Green,LANG:Blue,LANG:Yellow,LANG:Grey" thickness="3" visible="true">
+<VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Game Window" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="71,130" icon="" launch="true" mapName="LANG_Game Window" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" moveWithinFormat="$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
 <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
 <VASSAL.build.module.map.boardPicker.Board color="153,153,255" height="500" name="gwBoard" reversible="false" width="500"/>
 </VASSAL.build.module.map.BoardPicker>
+<VASSAL.build.module.map.ForwardToKeyBuffer/>
+<VASSAL.build.module.map.Scroller/>
+<VASSAL.build.module.map.ForwardToChatter/>
+<VASSAL.build.module.map.MenuDisplayer/>
+<VASSAL.build.module.map.MapCenterer/>
+<VASSAL.build.module.map.StackExpander/>
+<VASSAL.build.module.map.PieceMover/>
+<VASSAL.build.module.map.KeyBufferer/>
+<VASSAL.build.module.map.ImageSaver buttonText="" hotkey="" icon="/images/camera.gif" tooltip="Save Map as PNG file"/>
+<VASSAL.build.module.map.CounterDetailViewer bgColor="255,255,255" borderWidth="0" counterReportFormat="" delay="700" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="2" propertyFilter="" showDeck="false" showNoStack="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="2" zoomlevel="1.0"/>
+<VASSAL.build.module.properties.GlobalProperties/>
+<VASSAL.build.module.map.SelectionHighlighters/>
+<VASSAL.build.module.map.SetupStack name="test tack" owningBoard="gwBoard" x="200" y="200">
+<VASSAL.build.widget.PieceSlot entryName="uber1" height="0" width="0">+/null/report;78\,715;$location$: $newPieceName$ got (cas-n);;;	report;77\,715;$location$: $newPieceName$  (got cas-m;;;\	macro;When moved to game window, swap piece;;;CurrentMap = LANG_Game Window;77\,715;79\,715,87\,715\\	replace;;79,715;+\/null\/report\;78\,715\;$location$: $newPieceName$ (got cas-n)\;\;\;\\\\	report\;77\,715\;$location$: $newPieceName$ (got cas-m)\;\;\;\\\\\	macro\;When moved to Main Map, Swap piece\;\;\;CurrentMap = Main Map\;77\,715\;79\,715\\\\\\	replace\;\;79,715\;VASSAL.build.module.PrivateMap:LANG_Game Window\\/VASSAL.build.module.map.SetupStack:test tack\\/VASSAL.build.widget.PieceSlot:uber1\;null\;0\;0\;false\;\;\\\\\\\	prototype\;testproto\\\\\\\\	piece\;\;\;meeple-red.png\;normal1\/-1\\\\	-1\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	null\;40\;22;null;0;0;false;;\\\	prototype;testproto\\\\	piece;;;ubermeeple-red.png;uber1/-1	-1\	\\	\\\	\\\\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="uber2" height="0" width="0">+/null/report;78\,715;$location$: $newPieceName$ got (cas-n);;;	report;77\,715;$location$: $newPieceName$  (got cas-m;;;\	macro;When moved to game window, swap piece;;;CurrentMap = LANG_Game Window;77\,715;79\,715,87\,715\\	replace;;79,715;+\/null\/report\;78\,715\;$location$: $newPieceName$ (got cas-n)\;\;\;\\\\	report\;77\,715\;$location$: $newPieceName$ (got cas-m)\;\;\;\\\\\	macro\;When moved to Main Map, Swap piece\;\;\;CurrentMap = Main Map\;77\,715\;79\,715\\\\\\	replace\;\;79,715\;VASSAL.build.module.PrivateMap:LANG_Game Window\\/VASSAL.build.module.map.SetupStack:test tack\\/VASSAL.build.widget.PieceSlot:uber2\;null\;0\;0\;false\;\;\\\\\\\	prototype\;testproto\\\\\\\\	piece\;\;\;meeple-red.png\;normal2\/-1\\\\	-1\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	null\;40\;22;null;0;0;false;;\\\	prototype;testproto\\\\	piece;;;ubermeeple-red.png;uber2/-1	-1\	\\	\\\	\\\\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Cloth" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-cloth.png;Cloth/cloth	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Cloth" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-cloth.png;Cloth/cloth	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Cloth" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-cloth.png;Cloth/cloth	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Wheat" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-wheat.png;Wheat/wheat	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Wheat" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-wheat.png;Wheat/wheat	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Wheat" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-wheat.png;Wheat/wheat	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Wine" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-wine.png;Wine/wine	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Wine" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-wine.png;Wine/wine	\	null;0;0</VASSAL.build.widget.PieceSlot>
+<VASSAL.build.widget.PieceSlot entryName="Wine" height="0" width="0">+/null/mark;chittype	prototype;chit\	piece;;;chit-wine.png;Wine/wine	\	null;0;0</VASSAL.build.widget.PieceSlot>
+</VASSAL.build.module.map.SetupStack>
+<VASSAL.build.module.map.DrawPile allowMultiple="true" allowSelect="true" canSave="false" color="255,0,0" draw="true" drawFaceUp="true" faceDown="Always" faceDownFormat="" height="46" name="testchitdeck" owningBoard="gwBoard" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" reverseFormat="" reversible="true" shuffle="Never" shuffleFormat="" shuffleHotkey="" width="127" x="300" y="300"/>
+<VASSAL.build.module.map.SetupStack name="clothcounter" owningBoard="gwBoard" x="300" y="400">
+<VASSAL.build.widget.PieceSlot entryName="" height="0" width="0">+/null/globalkey;;50,130;89,130;chittype = cloth &amp; LocationName = testchitdeck;false;1;false;true;;;-1	macro;;;;;89\,130;48\,130,50\,130\	mark;chitcounter\\	PROP;chit_cloth_red;true,0,100,false;Reset Value:48\,130:P\,0,Inc:49\,130:I\,1\\\	immob;g;N\\\\	label;;Change Label;10;;0,0,0;t;0;c;0;b;c;$pieceName$ ($label$);Dialog;0;0;TextLabel\\\\\	piece;;;;/	\	true\\	0\\\	\\\\	$chit_cloth_red$\\\\\	null;0;0</VASSAL.build.widget.PieceSlot>
+</VASSAL.build.module.map.SetupStack>
+<VASSAL.build.module.map.MassKeyCommand buttonHotkey="77,715" buttonText="" deckCount="-1" filter="chittype = cloth" hotkey="89,130" icon="" reportFormat="$pieceName$ doing gkc " reportSingle="false"/>
 <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
+</VASSAL.build.module.PrivateMap>
+<VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="$pieceName$ created in $location$" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="anothertestmap" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="" moveToFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" moveWithinFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" side="LANG_Red,LANG_Black" thickness="3" visible="true">
+<VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
+<VASSAL.build.module.map.boardPicker.Board color="204,255,204" height="500" name="Board1" reversible="false" width="500"/>
+</VASSAL.build.module.map.BoardPicker>
+<VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="0" exSepY="0" top="38,0" unexSepX="0" unexSepY="0" up="39,0"/>
 <VASSAL.build.module.map.ForwardToKeyBuffer/>
 <VASSAL.build.module.map.Scroller/>
 <VASSAL.build.module.map.ForwardToChatter/>
@@ -75,9 +113,6 @@
 <VASSAL.build.module.map.CounterDetailViewer bgColor="255,255,255" borderWidth="0" counterReportFormat="" delay="700" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="2" propertyFilter="" showDeck="false" showNoStack="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="" zoomlevel="1.0"/>
 <VASSAL.build.module.properties.GlobalProperties/>
 <VASSAL.build.module.map.SelectionHighlighters/>
-<VASSAL.build.module.map.SetupStack name="test tack" owningBoard="gwBoard" x="200" y="200">
-<VASSAL.build.widget.PieceSlot entryName="uber1" height="0" width="0">+/null/report;78\,715;$location$: $newPieceName$ got (cas-n);;;	report;77\,715;$location$: $newPieceName$  (got cas-m;;;\	macro;When moved to game window, swap piece;;;previousLocation != location;77\,715;79\,715,87\,715\\	replace;;79,715;+\/null\/report\;78\,715\;$location$: $newPieceName$ (got cas-n)\;\;\;\\\\	report\;77\,715\;$location$: $newPieceName$ (got cas-m)\;\;\;\\\\\	macro\;When moved to Main Map, Swap piece\;\;\;\;78\,715\;79\,715\\\\\\	replace\;\;79,715\;VASSAL.build.module.PrivateMap:Game Window\\/VASSAL.build.module.map.SetupStack:test tack\\/VASSAL.build.widget.PieceSlot:uber1\;null\;0\;0\;false\;\;\\\\\\\	prototype\;testproto\\\\\\\\	piece\;\;\;meeple-red.png\;normal1\/-1\\\\	-1\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	null\;40\;22;null;0;0;false;;\\\	prototype;testproto\\\\	piece;;;ubermeeple-red.png;uber1/-1	-1\	\\	\\\	\\\\	null;0;0</VASSAL.build.widget.PieceSlot>
-<VASSAL.build.widget.PieceSlot entryName="uber2" height="0" width="0">+/null/report;78\,715;$location$: $newPieceName$ got (cas-n);;;	report;77\,715;$location$: $newPieceName$  (got cas-m;;;\	macro;When moved to game window, swap piece;;;previousLocation != location;77\,715;79\,715,87\,715\\	replace;;79,715;+\/null\/report\;78\,715\;$location$: $newPieceName$ (got cas-n)\;\;\;\\\\	report\;77\,715\;$location$: $newPieceName$ (got cas-m)\;\;\;\\\\\	macro\;When moved to Main Map, Swap piece\;\;\;\;78\,715\;79\,715\\\\\\	replace\;\;79,715\;VASSAL.build.module.PrivateMap:Game Window\\/VASSAL.build.module.map.SetupStack:test tack\\/VASSAL.build.widget.PieceSlot:uber2\;null\;0\;0\;false\;\;\\\\\\\	prototype\;testproto\\\\\\\\	piece\;\;\;meeple-red.png\;normal2\/-1\\\\	-1\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	null\;40\;22;null;0;0;false;;\\\	prototype;testproto\\\\	piece;;;ubermeeple-red.png;uber2/-1	-1\	\\	\\\	\\\\	null;0;0</VASSAL.build.widget.PieceSlot>
-</VASSAL.build.module.map.SetupStack>
+<VASSAL.build.module.map.DrawPile allowMultiple="true" allowSelect="true" canSave="false" color="0,0,0" draw="true" drawFaceUp="true" faceDown="Always" faceDownFormat="" height="40" name="mydeck" owningBoard="Board1" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" reverseFormat="" reversible="false" shuffle="Never" shuffleFormat="" shuffleHotkey="" width="40" x="300" y="300"/>
 </VASSAL.build.module.PrivateMap>
 </VASSAL.build.GameModule>
