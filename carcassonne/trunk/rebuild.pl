@@ -43,11 +43,12 @@ sub build_langs {
   my ($module_file) = @_;
   foreach my $l (keys %{ $lang->{langs} }) {
       print "    building $l module\n";
-      my $abbr = $lang->{langs}->{$l}->{'abbr'};
+      my $abbr = $lang->{langs}->{$l}->{abbr};
       my $lang_file = "$config->{name}-$config->{version}-$abbr.mod";
       copy($module_file,$lang_file);
       my $mod = new Archive::Zip($lang_file);
       my $working_buildfile = "buildfile.$$." . time . ".tmp";
+      print "      extracting buildFile\n";
       $mod->extractMember('buildFile',$working_buildfile);
       my @module_data;
       my $FH;
@@ -56,6 +57,7 @@ sub build_langs {
       close $FH;
       open ($FH,">$working_buildfile") || mydie("Can't write working buildfile $working_buildfile: $!");
 
+      print "      updating phrases\n";
       foreach my $line (@module_data) {
         foreach my $p (@{ $lang->{phrases} }) {
           my ($phrase,$replacement) = (quotemeta($p->{phrase}),$p->{$abbr});
@@ -67,7 +69,14 @@ sub build_langs {
         print $FH $line;
       }
       close $FH;
+      print "      updating buildFile\n";
       $mod->updateMember('buildFile',$working_buildfile);
+      $mod->overwrite();
+      print "      extracting info-$abbr\n";
+      $mod = new Archive::Zip($lang_file);
+      $mod->extractMember("info-$abbr",$working_buildfile);
+      print "      updating info\n";
+      $mod->updateMember('info',$working_buildfile);
       $mod->overwrite();
       unlink $working_buildfile;
   }

@@ -9,6 +9,10 @@ phrases:
 #  - phrase: LANG_the phrase (without the LANG_)
 #    en: The Phrase in en
 #    es: The Phrase in es
+  - phrase: CarcassonneModule
+    en: Carcassonne
+  - phrase: Language
+    en: English
   - phrase: About Carcassonne
     en: About Carcassonne
   - phrase: Join/Leave
@@ -27,7 +31,5 @@ phrases:
     en: Yellow
   - phrase: Grey
     en: Grey
-  - phrase: English
-    en: English
   - phrase: Game Window
     en: Game Window
