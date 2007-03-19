@@ -29,6 +29,9 @@ sub build_module {
   my $module_file = "$config->{name}-$config->{version}.mod";
   my $mod = new Archive::Zip;
   $mod->addTree( './build', '', \&select_files );
+  if (-d "$config->{name}-java/bin/com") {
+    $mod->addTree( "$config->{name}-java/bin/com", 'com', \&select_files_class );
+  }
   $mod->writeToFileNamed( $module_file );
   return $module_file;
 }
@@ -72,18 +75,28 @@ sub build_langs {
       print "      updating buildFile\n";
       $mod->updateMember('buildFile',$working_buildfile);
       $mod->overwrite();
-      print "      extracting info-$abbr\n";
-      $mod = new Archive::Zip($lang_file);
-      $mod->extractMember("info-$abbr",$working_buildfile);
-      print "      updating info\n";
-      $mod->updateMember('info',$working_buildfile);
-      $mod->overwrite();
+      #print "      extracting info-$abbr\n";
+      #$mod = new Archive::Zip($lang_file);
+      #$mod->extractMember("info-$abbr",$working_buildfile);
+      #print "      updating info\n";
+      #$mod->updateMember('info',$working_buildfile);
+      #$mod->overwrite();
       unlink $working_buildfile;
   }
 }
 
 sub select_files {
   return $_ !~ m/svn/;
+}
+
+sub select_files_class {
+  if ( $_ =~ m/(svn)/ ) {
+    return 0;
+  }
+  elsif ( $_ =~ m/.+\.class/ ) {
+    return 1;
+  }
+  return 0;
 }
 
 sub parse_yaml {

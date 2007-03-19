@@ -24,6 +24,10 @@ sub extract_module {
   print "  extracting the main module\n";
   my $module_file = "$config->{name}-$config->{version}.mod";
   my $mod = new Archive::Zip($module_file);
+  foreach my $java ( $mod->membersMatching('^com') ) {
+    print "    Not extracting java class... " . $java->fileName() . "\n";
+    $mod->removeMember($java);
+  }
   $mod->extractTree( '','./build/' );
 }
 
@@ -31,11 +35,6 @@ sub clean {
   print "  cleaning the build directory\n";
   unlink glob("build/images/*.*");
   unlink glob("build/*");
-  unlink glob("build/*");
-}
-
-sub select_files {
-  return $_ !~ m/svn/;
 }
 
 sub parse_yaml {
