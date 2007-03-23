@@ -3,6 +3,8 @@
 langs:
   English:
     abbr: en
+  Test:
+    abbr: xx
 #  Espanol:
 #    abbr: es
 phrases:
@@ -11,25 +13,82 @@ phrases:
 #    es: The Phrase in es
   - phrase: CarcassonneModule
     en: Carcassonne
+    xx: TEST_0001
   - phrase: Language
     en: English
+    xx: TEST_0002
   - phrase: About Carcassonne
     en: About Carcassonne
+    xx: TEST_0003
   - phrase: Join/Leave
     en: Join/Leave
+    xx: TEST_0004
   - phrase: Join this game or allow another player to take your side in this game
     en: Join this game or allow another player to take your side in this game
+    xx: TEST_0005
+  - phrase: "$playerName$ moves $newPieceName$ to Black's jail"
+    en : "$playerName$ moves $newPieceName$ to Black's jail"
+    xx: TEST_0006
+  - phrase: "$playerName$ changes the stance of $newPieceName$"
+    en : "$playerName$ changes the stance of $newPieceName$"
+    xx: TEST_0007
+  - phrase: "Laydown\/Stand Up"
+    en: "Laydown\/Stand Up"
+    xx: TEST_0008
+  - phrase: "Return to Red's Supply"
+    en: "Return to Red's Supply"
+    xx: TEST_0009
+  - phrase: $playerName$ places $pieceName$ onto the playing surface
+    en: $playerName$ places $pieceName$ onto the playing surface
+    xx: TEST_0010
+  - phrase: $playerName$ removed $newPieceName$ from the game
+    en: $playerName$ removed $newPieceName$ from the game
+    xx: TEST_0011
+  - phrase: $playerName$ removes all red pieces
+    en: $playerName$ removes all red pieces
+    xx: TEST_0012
+  - phrase: $playerName$ removes all black pieces
+    en: $playerName$ removes all black pieces
+    xx: TEST_0013
+  - phrase: $playerName$ moves $newPieceName$ to $location$
+    en: $playerName$ moves $newPieceName$ to $location$
+    xx: TEST_0014
+  - phrase: Adjust Game Components
+    en: Adjust Game Components
+    xx: TEST_0015
+  - phrase: Remove colors
+    en: Remove colors
+    xx: TEST_0016
+  - phrase: Remove from game
+    en: Remove from game
+    xx: TEST_0017
+  - phrase: Extra Pieces
+    en: Extra Pieces
+    xx: TEST_0018
+  - phrase: Score Track
+    en: Score Track
+    xx: TEST_0019
   - phrase: Red
     en: Red
+    xx: TEST_0020
+  - phrase: "Black's Supply (jail)"
+    en : "Black's Supply (jail)"
+    xx: TEST_0021
   - phrase: Black
     en: Black
+    xx: TEST_0022
   - phrase: Green
     en: Green
+    xx: TEST_0023
   - phrase: Blue
     en: Blue
+    xx: TEST_0024
   - phrase: Yellow
     en: Yellow
+    xx: TEST_0025
   - phrase: Grey
     en: Grey
+    xx: TEST_0026
   - phrase: Game Window
     en: Game Window
+    xx: TEST_0027

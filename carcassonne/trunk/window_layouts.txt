@@ -1,0 +1,43 @@
+Game Window
+===========
+
+          Score Track
+
+
+ (player supplies)
+
+ Red       Black      Green
+
+                                  Extra Pieces
+
+ Blue      Yellow     Grey
+
+
+Each supply will contain:
+
+Meeple Deck           Chit Deck               Tower Deck
+Meeple Count          Chit/Chit/Chit Count    Tower Count
+
+
+    Uber Deck     Builder Deck    Pig Deck    King Deck
+    Uber Count    Builder Count   Pig Count   King/Robber Count
+
+
+Setup Window
+============
+
+Add Tiles                                     Remove Colors
+
+
+
+
+
+
+
+
+                                              Remove Set Tokens
+
+
+
+
+

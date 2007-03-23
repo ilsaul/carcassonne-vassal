@@ -62,7 +62,7 @@ sub build_langs {
 
       print "      updating phrases\n";
       foreach my $line (@module_data) {
-        foreach my $p (@{ $lang->{phrases} }) {
+        foreach my $p (sort by_phrase_length @{ $lang->{phrases} }) {
           my ($phrase,$replacement) = (quotemeta($p->{phrase}),$p->{$abbr});
           $line =~ s/LANG_${phrase}/$replacement/g;
         }
@@ -83,6 +83,10 @@ sub build_langs {
       #$mod->overwrite();
       unlink $working_buildfile;
   }
+}
+
+sub by_phrase_length {
+  return length($b->{phrase}) <=> length($a->{phrase});
 }
 
 sub select_files {

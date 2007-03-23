@@ -1,7 +1,12 @@
 C      F1   Display SVN Info
 C      G    Toggle Game Window
 C      R    Manual return of supply token to player's supply
+C      S    Toggle Setup Window
 C-A-S  B    Automatic return of supply token to player's supply
-C-A-S  M    Triggered on peices that move to the game window
-C-A-S  M    Triggered on peices that move to the main map
+C-A-S  F1   Remove all red pieces
+C-A-S  M    Triggered on pieces that move to the game window
+C-A-S  M    Triggered on pieces that move to the main map
+C-A-S  N    Triggered on tokens that move to the game window AND ONLY THE GAME WINDOW
 C-A-S  S    SWAP mini token <=> normal 
+C-A-S  W    Jailing supply token to Black's supply jail
+C-S    D    Remove piece from the game (also see prototype called "removable")
