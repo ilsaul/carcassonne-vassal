@@ -25,17 +25,29 @@ Meeple Count          Chit/Chit/Chit Count    Tower Count
 
 Setup Window
 ============
+Tiles                                         Tokens
+
 
 Add Tiles                                     Remove Colors
 
+  Carcassonne                                   Red
+  The River                                     Black
+  Inns & Cathedrals                             Green
+  Traders & Builders                            Blue
+  The King                                      Yellow
+  The Cathars                                   Grey
+  The Count of Carcassonne
+  The Princess & The Dragon
+  The River II
+  The Tower
 
-
-
-
-
-
-
-                                              Remove Set Tokens
+Remove Tiles                                  Remove Set Tokens
+  Anything that gets added                      Inns & Cathedrals (ubermeepls)
+                                                Traders & Builders (builder/pig/chits)
+                                                The King (king/robber)
+                                                The Count (count)
+                                                The Princess/Dragon (fairy/dragon)
+                                                The Tower (tower pieces)
 
 
 

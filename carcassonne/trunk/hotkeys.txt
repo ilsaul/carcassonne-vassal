@@ -1,12 +1,27 @@
+C      0    Increase your score by ten
+C      1    Increase your score by one
+C      2    Increase your score by two
+C      3    Increase your score by three
+C      4    Increase your score by four
+C      5    Increase your score by five
+C      6    Increase your score by six
+C      7    Increase your score by seven
+C      8    Increase your score by eight
+C      9    Increase your score by nine
+C      =    Report all scores
 C      F1   Display SVN Info
 C      G    Toggle Game Window
 C      R    Manual return of supply token to player's supply
 C      S    Toggle Setup Window
+C      [    Decrease score modifier by 50 (on score meeple)
+C      \    Reset score modifier (on score meeple)
+C      ]    Increase score modifier by 50 (on score meeple)
+C-A-S  B    Automatic return of score meepls to score track (position zero)
 C-A-S  B    Automatic return of supply token to player's supply
 C-A-S  F1   Remove all red pieces
 C-A-S  M    Triggered on pieces that move to the game window
 C-A-S  M    Triggered on pieces that move to the main map
-C-A-S  N    Triggered on tokens that move to the game window AND ONLY THE GAME WINDOW
+C-A-S  N    Triggered on tokens that move to ANY map that is NOT the Main Map
 C-A-S  S    SWAP mini token <=> normal 
 C-A-S  W    Jailing supply token to Black's supply jail
 C-S    D    Remove piece from the game (also see prototype called "removable")

@@ -92,3 +92,30 @@ phrases:
   - phrase: Game Window
     en: Game Window
     xx: TEST_0027
+  - phrase: Setup Window
+    en: Setup Window
+    xx: TEST_0028
+  - phrase: Tiles
+    en: Tiles
+    xx: TEST_0029
+  - phrase: Table Center
+    en: Table Center
+    xx: TEST_0030
+  - phrase: $playerName$ moved score meeple $newPieceName$ off the scoreboard?  Sending back to the scoreboard.
+    en: $playerName$ moved score meeple $newPieceName$ off the scoreboard?  Sending back to the scoreboard.
+    xx: TEST_0031
+  - phrase: $playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)
+    en: $playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)
+    xx: TEST_0032
+  - phrase: Increase score by 50
+    en: Increase score by 50
+    xx: TEST_0033
+  - phrase: Decrease score by 50
+    en: Decrease score by 50
+    xx: TEST_0034
+  - phrase: $playerName$ decreases $owner$ by 50 points
+    en: $playerName$ decreases $owner$ by 50 points
+    xx: TEST_0035
+  - phrase: $playerName$ increases $owner$ by 50 points
+    en: $playerName$ increases $owner$ by 50 points
+    xx: TEST_0035

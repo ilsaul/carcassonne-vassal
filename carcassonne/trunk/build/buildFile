@@ -19,7 +19,7 @@
         <option name="serverControlsIcon">/images/connect.gif</option>
         <option name="serverControlsHotKey">83,520</option>
     </VASSAL.build.module.GlobalOptions>
-    <VASSAL.build.module.Map allowMultiple="false" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="Main Map" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="LANG_$playerName$ places $pieceName$ onto the playing surface" moveWithinFormat="" thickness="3">
+    <VASSAL.build.module.Map allowMultiple="false" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="LANG_$playerName$ places $pieceName$ onto the playing surface" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="Main Map" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="LANG_$playerName$ places $pieceName$ onto the playing surface" moveWithinFormat="" thickness="3">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
             <VASSAL.build.module.map.boardPicker.Board color="255,255,255" height="3100" name="Table" reversible="false" width="3100">
                 <VASSAL.build.module.map.boardPicker.board.SquareGrid color="204,204,204" cornersLegal="false" dotsVisible="false" dx="100.0" dy="100.0" edgesLegal="false" visible="true" x0="50" y0="50"/>
@@ -40,7 +40,9 @@
         <VASSAL.build.module.map.SelectionHighlighters/>
         <VASSAL.build.module.map.Zoomer factor="1.5" inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" max="5" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" zoomInKey="" zoomOutKey="" zoomStart="1"/>
         <VASSAL.build.module.map.GlobalMap buttonText="Overview" color="0,0,0" hotkey="79,195" icon="" scale="0.19444444" tooltip="Show/Hide overview window"/>
-        <VASSAL.build.module.map.SetupStack name="TableCenter" owningBoard="Table" x="1550" y="1550"/>
+        <VASSAL.build.module.map.SetupStack name="TableCenter" owningBoard="Table" x="1550" y="1550">
+            <VASSAL.build.widget.PieceSlot entryName="Table Center" height="0" width="0">+/null/immob;cg;V	prototype;shiftable\	piece;;;GameCenter;Table Center/	\	null;0;0</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
     </VASSAL.build.module.Map>
     <VASSAL.build.module.gamepieceimage.GamePieceImageDefinitions>
         <VASSAL.build.module.gamepieceimage.ColorManager/>
@@ -48,8 +50,8 @@
             <VASSAL.build.module.gamepieceimage.FontStyle name="Default" style="Dialog,0,12,false"/>
         </VASSAL.build.module.gamepieceimage.FontManager>
         <VASSAL.build.module.gamepieceimage.GamePieceLayoutsContainer>
-            <VASSAL.build.module.gamepieceimage.GamePieceLayout border="None" height="76" layout="" name="PlayerCover" width="138">
-                <VASSAL.build.module.gamepieceimage.GamePieceImage bgColor="WHITE" borderColor="BLACK" name="PlayerCover" props=""/>
+            <VASSAL.build.module.gamepieceimage.GamePieceLayout border="None" height="100" layout="Text;Default;Fixed for this layout;LANG_Table Center;;;;;false|Label;Center;0;0;-45;true" name="TableCenter" width="100">
+                <VASSAL.build.module.gamepieceimage.GamePieceImage bgColor="LIGHT GRAY" borderColor="BLACK" name="GameCenter" props="Text;Label;Center;BLACK;CLEAR;La;RED"/>
             </VASSAL.build.module.gamepieceimage.GamePieceLayout>
         </VASSAL.build.module.gamepieceimage.GamePieceLayoutsContainer>
     </VASSAL.build.module.gamepieceimage.GamePieceImageDefinitions>
@@ -59,23 +61,79 @@
     </VASSAL.build.module.properties.GlobalProperties>
     <VASSAL.build.module.PrototypesContainer>
         <VASSAL.build.module.PrototypeDefinition name="removable">+/null/report;68\,195;LANG_$playerName$ removed $newPieceName$ from the game;;;	delete;LANG_Remove from game;68,195\	piece;;;;/-1	\	null;266;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition name="alltokens">+/null/macro;;;;CurrentMap = LANG_Game Window;77\,715;78\,715	prototype;removable\	piece;;;;/	\	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="shiftable">+/null/mark;canShift	piece;;;;/true	null;253;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="alltokens">+/null/macro;;;;CurrentMap != Main Map;77\,715;78\,715	prototype;removable\	piece;;;;/	\	null;289;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="redtoken">+/null/mark;color	mark;owner\	prototype;alltokens\\	piece;;;;/red	LANG_Red\	\\	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="blacktoken">+/null/mark;color	mark;owner\	prototype;alltokens\\	piece;;;;/black	LANG_Black\	\\	null;298;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="anymeeple">+/null/immob;g;N	piece;;;;/	null;279;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition name="minimeeple">+/null/macro;Auto swap with non-mini version;;;CurrentMap != LANG_Game Window;77\,715;83\,715	nonRect;m,-2,-13,l,-2,-12,l,-2,-11,l,-3,-11,l,-3,-10,l,-3,-9,l,-4,-9,l,-4,-8,l,-4,-7,l,-6,-7,l,-6,-6,l,-8,-6,l,-8,-5,l,-9,-5,l,-9,-4,l,-10,-4,l,-10,-3,l,-10,-2,l,-10,-1,l,-10,0,l,-9,0,l,-9,1,l,-7,1,l,-7,2,l,-7,3,l,-8,3,l,-8,4,l,-8,5,l,-9,5,l,-9,6,l,-9,7,l,-10,7,l,-10,8,l,-10,9,l,-10,10,l,-9,10,l,-9,11,l,-8,11,l,-8,12,l,-7,12,l,-7,13,l,1,13,l,1,12,l,1,11,l,2,11,l,2,10,l,3,10,l,3,11,l,4,11,l,4,12,l,11,12,l,11,11,l,11,10,l,11,9,l,11,8,l,11,7,l,10,7,l,10,6,l,10,5,l,10,4,l,9,4,l,9,3,l,9,2,l,10,2,l,10,1,l,11,1,l,11,0,l,11,-1,l,11,-2,l,11,-3,l,11,-4,l,10,-4,l,10,-5,l,9,-5,l,9,-6,l,8,-6,l,8,-7,l,6,-7,l,6,-8,l,5,-8,l,5,-9,l,5,-10,l,4,-10,l,4,-11,l,3,-11,l,3,-12,l,2,-12,l,2,-13,c\	prototype;anymeeple\\	piece;;;;/	\	\\	null;355;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition name="bigmeeple">+/null/report;76\,130;LANG_$playerName$ changes the stance of $newPieceName$;;;	macro;Auto swap with mini version;;;CurrentMap = LANG_Game Window;77\,715;83\,715\	prototype;anymeeple\\	piece;;;;/-1	\	\\	null;342;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="minimeeple">+/null/macro;Auto swap with non-mini version;;;CurrentMap = Main Map;77\,715;83\,715	nonRect;m,-2,-13,l,-2,-12,l,-2,-11,l,-3,-11,l,-3,-10,l,-3,-9,l,-4,-9,l,-4,-8,l,-4,-7,l,-6,-7,l,-6,-6,l,-8,-6,l,-8,-5,l,-9,-5,l,-9,-4,l,-10,-4,l,-10,-3,l,-10,-2,l,-10,-1,l,-10,0,l,-9,0,l,-9,1,l,-7,1,l,-7,2,l,-7,3,l,-8,3,l,-8,4,l,-8,5,l,-9,5,l,-9,6,l,-9,7,l,-10,7,l,-10,8,l,-10,9,l,-10,10,l,-9,10,l,-9,11,l,-8,11,l,-8,12,l,-7,12,l,-7,13,l,1,13,l,1,12,l,1,11,l,2,11,l,2,10,l,3,10,l,3,11,l,4,11,l,4,12,l,11,12,l,11,11,l,11,10,l,11,9,l,11,8,l,11,7,l,10,7,l,10,6,l,10,5,l,10,4,l,9,4,l,9,3,l,9,2,l,10,2,l,10,1,l,11,1,l,11,0,l,11,-1,l,11,-2,l,11,-3,l,11,-4,l,10,-4,l,10,-5,l,9,-5,l,9,-6,l,8,-6,l,8,-7,l,6,-7,l,6,-8,l,5,-8,l,5,-9,l,5,-10,l,4,-10,l,4,-11,l,3,-11,l,3,-12,l,2,-12,l,2,-13,c\	prototype;anymeeple\\	piece;;;;/	\	\\	null;355;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="bigmeeple">+/null/report;76\,130;LANG_$playerName$ changes the stance of $newPieceName$;;;	macro;Auto swap with mini version;;;CurrentMap != Main Map;77\,715;83\,715\	prototype;anymeeple\\	piece;;;;/-1	\	\\	null;342;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="scoremeeple">+/null/report;93\,130;LANG_$playerName$ increases $owner$ by 50 points;;;report decrease	report;91\,130;LANG_$playerName$ decreases $owner$ by 50 points;;;report increase\	emb2;;0;;LANG_Increase score by 50;2;];LANG_Decrease score by 50;2;[;;92,715;1;false;0;0; ,score-50.png,score-100.png,score-150.png,score-200.png,score-250.png,score-300.png,score-350.png,score-400.png,score-450.png,score-500.png;,+\+50,+\+100,+\+150,+\+200,+\+250,+\+300,+\+350,+\+400,+\+450,+\+500;false;scoremodifier;;\\	report;66\,715;LANG_$playerName$ moved score meeple $newPieceName$ off the scoreboard?  Sending back to the scoreboard.;;;\\\	sendto;;66,715;LANG_Game Window;gwBoard;445;293;;;0;0;0;0;Send back to scoreboard\\\\	macro;Keep the score meeples on the score track;;;CurrentZone != LANG_Score Track;77\,715;66\,715\\\\\	mark;scoremeeple\\\\\\	piece;;;;/-1	-1\	1;\\	-1\\\	;;\\\\	\\\\\	true\\\\\\	null;385;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="red_meeple_all">+/null/report;87\,715;LANG_$playerName$ moves $newPieceName$ to Black's jail;;;Final bounce to black jail	report;66\,715;LANG_$playerName$ moves $newPieceName$ to $location$;;;Final bounce to supply deck\	return;;87,715;LANG_Black's Supply (jail)\\	return;;66,715;LANG_Red's Supply (meeples)\\\	sendto;LANG_Return to Red's Supply;82,130;LANG_Game Window;gwBoard;14;402;;;0;0;0;0;Manual return to supply\\\\	macro;Sending to Black's jail when in Black Supply;;;CurrentZone = LANG_Black's Supply;77\,715;87\,715\\\\\	macro;Send Back Home When In A Red Supply;;;CurrentZone = LANG_Red's Supply || CurrentZone = LANG_Extra Pieces || CurrentZone = LANG_Score Track || LocationName = offboard;78\,715;66\,715\\\\\\	prototype;redtoken\\\\\\\	piece;;;;/-1	-1\	\\	\\\	;;\\\\	\\\\\	\\\\\\	\\\\\\\	null;386;20</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="red_meeple_mini">+/null/prototype;red_meeple_all	prototype;minimeeple\	piece;;;;/	\	null;296;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="red_meeple_big">+/null/emb2;;0;;LANG_Laydown\/Stand Up;2;L;;0;;;;1;false;0;0;meeple-red.png,meeple-red-2.png;,;true;stance;;	prototype;red_meeple_all\	prototype;bigmeeple\\	piece;;;;/1;	\	\\	null;296;22</VASSAL.build.module.PrototypeDefinition>
     </VASSAL.build.module.PrototypesContainer>
     <VASSAL.build.module.Chatter/>
     <VASSAL.build.module.GlobalKeyCommand buttonHotkey="112,130" buttonText="" deckCount="-1" hotkey="" icon="" name="SVN Info" reportFormat="$svnid$" reportSingle="false" tooltip=""/>
-    <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Game Window" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="71,130" icon="" launch="true" mapName="LANG_Game Window" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="" moveWithinFormat="" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
+    <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Game Window" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="71,130" icon="" launch="true" mapName="LANG_Game Window" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="" moveWithinFormat="LANG_$playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
             <VASSAL.build.module.map.boardPicker.Board image="gamewindow.png" name="gwBoard" reversible="false">
                 <VASSAL.build.module.map.boardPicker.board.ZonedGrid>
                     <VASSAL.build.module.map.boardPicker.board.mapgrid.ZonedGridHighlighter/>
-                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="LANG_Score Track" path="500,347;500,1;2,0;0,344;0,344;0,344;0,344" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$gridLocation$" name="LANG_Score Track" path="500,347;500,1;2,0;0,344;0,344;0,344;0,344" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="0" originx="445" originy="293"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="1" originx="371" originy="300"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="2" originx="322" originy="297"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="3" originx="271" originy="299"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="4" originx="229" originy="296"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="5" originx="184" originy="294"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="6" originx="141" originy="300"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="7" originx="87" originy="303"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="8" originx="41" originy="284"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="9" originx="35" originy="240"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="10" originx="30" originy="192"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="11" originx="30" originy="148"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="12" originx="30" originy="105"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="13" originx="33" originy="58"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="14" originx="75" originy="35"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="15" originx="114" originy="35"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="16" originx="153" originy="32"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="17" originx="189" originy="36"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="18" originx="227" originy="37"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="19" originx="266" originy="38"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="20" originx="304" originy="31"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="21" originx="344" originy="30"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="22" originx="380" originy="30"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="23" originx="416" originy="29"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="24" originx="460" originy="33"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="25" originx="473" originy="73"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="26" originx="462" originy="104"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="27" originx="417" originy="101"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="28" originx="383" originy="103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="29" originx="346" originy="105"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="30" originx="315" originy="112"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="31" originx="282" originy="112"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="32" originx="248" originy="115"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="33" originx="210" originy="113"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="34" originx="175" originy="111"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="35" originx="140" originy="109"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="36" originx="113" originy="127"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="37" originx="102" originy="157"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="38" originx="121" originy="188"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="39" originx="154" originy="197"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="40" originx="186" originy="199"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="41" originx="217" originy="196"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="42" originx="256" originy="187"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="43" originx="292" originy="185"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="44" originx="325" originy="187"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="45" originx="360" originy="187"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="46" originx="392" originy="183"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="47" originx="434" originy="177"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="48" originx="456" originy="197"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="49" originx="459" originy="225"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
                     <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="LANG_Red's Supply" path="135,347;138,420;2,417;0,348;0,348;0,348;0,348" useHighlight="false" useParentGrid="false"/>
                     <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="LANG_Black's Supply" path="275,427;274,349;139,345;136,426" useHighlight="false" useParentGrid="false"/>
                     <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="LANG_Green's Supply" path="414,423;413,348;277,346;277,419;277,419;277,419;277,419" useHighlight="false" useParentGrid="false"/>
@@ -99,6 +157,7 @@
         <VASSAL.build.module.map.SelectionHighlighters/>
         <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
         <VASSAL.build.module.map.LayeredPieceCollection layerOrder="GameWindow,Tokens" property="GWLayer"/>
+        <com.locehilios.vassal.ScoreControl/>
         <VASSAL.build.module.map.DrawPile allowMultiple="false" allowSelect="false" canSave="false" color="0,0,0" draw="true" drawFaceUp="true" faceDown="Never" faceDownFormat="" height="26" name="LANG_Red's Supply (meeples)" owningBoard="gwBoard" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" reverseFormat="" reversible="false" shuffle="Never" shuffleFormat="" shuffleHotkey="" width="21" x="11" y="362">
             <VASSAL.build.widget.CardSlot entryName="LANG_Red Meeple 1" height="0" width="0">+/null/replace;;83,715;+\/null\/replace\;\;83,715\;VASSAL.build.module.PrivateMap:LANG_Game Window\\/VASSAL.build.module.map.DrawPile:LANG_Red's Supply (meeples)\\/VASSAL.build.widget.CardSlot:LANG_Red Meeple 1\;null\;0\;0\;false\;77,715\;manual swap with non-mini\	prototype\;red_meeple_big\\	piece\;\;\;\;LANG_Red Meeple 1\/\	\\	null\;40\;22;null;0;0;false;77,715;Manual swap with non-mini	prototype;red_meeple_mini\	piece;;;meeple-red-mini.png;LANG_Red Meeple 1/	\	null;0;0</VASSAL.build.widget.CardSlot>
             <VASSAL.build.widget.CardSlot entryName="LANG_Red Meeple 2" height="0" width="0">+/null/replace;;83,715;+\/null\/replace\;\;83,715\;VASSAL.build.module.PrivateMap:LANG_Game Window\\/VASSAL.build.module.map.DrawPile:LANG_Red's Supply (meeples)\\/VASSAL.build.widget.CardSlot:LANG_Red Meeple 2\;null\;0\;0\;false\;77,715\;manual swap with non-mini\	prototype\;red_meeple_big\\	piece\;\;\;\;LANG_Red Meeple 2\/\	\\	null\;40\;22;null;0;0;false;77,715;Manual swap with non-mini	prototype;red_meeple_mini\	piece;;;meeple-red-mini.png;LANG_Red Meeple 2/	\	null;0;0</VASSAL.build.widget.CardSlot>
@@ -108,8 +167,30 @@
             <VASSAL.build.widget.PieceSlot entryName="red_meeple_counter" height="0" width="0">+/null/immob;ng;V	label;;Change Label;10;;0,0,0;t;0;c;0;b;c;$pieceName$ ($label$);Dialog;0;0;TextLabel\	piece;;;;red_meeple_counter/	$LANG_Red's Supply (meeples)_numPieces$\	null;0;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
         <VASSAL.build.module.map.DrawPile allowMultiple="false" allowSelect="true" canSave="false" color="0,0,0" draw="true" drawFaceUp="true" faceDown="Never" faceDownFormat="" height="32" name="LANG_Black's Supply (jail)" owningBoard="gwBoard" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" reverseFormat="" reversible="false" shuffle="Never" shuffleFormat="" shuffleHotkey="" width="26" x="150" y="405"/>
+        <VASSAL.build.module.map.SetupStack name="ScoreMeeples" owningBoard="gwBoard" x="445" y="293">
+            <VASSAL.build.widget.PieceSlot entryName="LANG_Red" height="0" width="0">+/null/prototype;scoremeeple	prototype;redtoken\	piece;;;meeple-red-mini.png;LANG_Red/	\	null;0;0</VASSAL.build.widget.PieceSlot>
+            <VASSAL.build.widget.PieceSlot entryName="LANG_Black" height="0" width="0">+/null/prototype;scoremeeple	prototype;blacktoken\	piece;;;meeple-black-mini.png;LANG_Black/	\	null;0;0</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
     </VASSAL.build.module.PrivateMap>
-    <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Setup Window" changeFormat="" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="83,130" icon="" launch="true" mapName="LANG_Setup Window" markMoved="Never" markUnmovedIcon="" moveKey="" moveToFormat="" moveWithinFormat="" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
+    <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Tiles" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="84,130" icon="" launch="true" mapName="LANG_Tiles" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="" moveWithinFormat="" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
+        <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
+            <VASSAL.build.module.map.boardPicker.Board color="204,0,204" height="500" name="tilesBoard" reversible="false" width="500"/>
+        </VASSAL.build.module.map.BoardPicker>
+        <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
+        <VASSAL.build.module.map.ForwardToKeyBuffer/>
+        <VASSAL.build.module.map.Scroller/>
+        <VASSAL.build.module.map.ForwardToChatter/>
+        <VASSAL.build.module.map.MenuDisplayer/>
+        <VASSAL.build.module.map.MapCenterer/>
+        <VASSAL.build.module.map.StackExpander/>
+        <VASSAL.build.module.map.PieceMover/>
+        <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.map.ImageSaver buttonText="" hotkey="" icon="/images/camera.gif" tooltip="Save Map as PNG file"/>
+        <VASSAL.build.module.map.CounterDetailViewer bgColor="255,255,255" borderWidth="0" counterReportFormat="" delay="700" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="2" propertyFilter="" showDeck="false" showNoStack="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="" zoomlevel="1.0"/>
+        <VASSAL.build.module.properties.GlobalProperties/>
+        <VASSAL.build.module.map.SelectionHighlighters/>
+    </VASSAL.build.module.PrivateMap>
+    <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Setup Window" changeFormat="" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="83,130" icon="" launch="true" mapName="LANG_Setup Window" markMoved="Never" markUnmovedIcon="" moveKey="77,715" moveToFormat="" moveWithinFormat="" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
             <VASSAL.build.module.map.boardPicker.Board color="0,255,255" height="500" name="setupBoard" reversible="false" width="500"/>
         </VASSAL.build.module.map.BoardPicker>
@@ -130,7 +211,5 @@
             <VASSAL.build.widget.PieceSlot entryName="RemoveRed" height="0" width="0">+/null/immob;ng;V	button;112,715;-20;-20;40;40;\	macro;;;;;112\,715;68\,195\\	globalhotkey;;112,715;112,715\\\	delete;;68,195\\\\	piece;;;meeple-red.png;RemoveRed/	\	\\	\\\	\\\\	null;0;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
     </VASSAL.build.module.PrivateMap>
-    <com.locehilios.vassal.ScoreControl/>
     <VASSAL.build.module.GlobalKeyCommand buttonHotkey="112,715" buttonText="" deckCount="-1" filter="$color$ = red" hotkey="68,195" icon="" name="Remove Red Pieces" reportFormat="LANG_$playerName$ removes all red pieces" reportSingle="true" tooltip=""/>
-    <com.locehilios.vassal.ScoreControl/>
 </VASSAL.build.GameModule>
