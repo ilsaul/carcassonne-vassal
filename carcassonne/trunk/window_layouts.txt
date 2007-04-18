@@ -22,11 +22,19 @@ Meeple Count          Chit/Chit/Chit Count    Tower Count
     Uber Deck     Builder Deck    Pig Deck    King Deck
     Uber Count    Builder Count   Pig Count   King/Robber Count
 
+River Tiles
+===========
+River
+
+Springs      Draw
+
+Lakes
+
+
 
 Setup Window
 ============
 Tiles                                         Tokens
-
 
 Add Tiles                                     Remove Colors
 
@@ -40,16 +48,24 @@ Add Tiles                                     Remove Colors
   The Princess & The Dragon
   The River II
   The Tower
+  GQ Mini Expansion
 
-Remove Tiles                                  Remove Set Tokens
-  Anything that gets added                      Inns & Cathedrals (ubermeepls)
-                                                Traders & Builders (builder/pig/chits)
-                                                The King (king/robber)
-                                                The Count (count)
-                                                The Princess/Dragon (fairy/dragon)
-                                                The Tower (tower pieces)
+Remove Set Tokens
 
+  Inns & Cathedrals (ubermeeples)
+  Traders & Builders (builder/pig/chits)
+  The King (king/robber)
+  The Count (count)
+  The Princess/Dragon (fairy/dragon)
+  The Tower (tower pieces)
 
-
+Notes on additions
+  Adding The Count assebles the city of Carcassonne on the table
+  Adding any of the following automatically removes the standard start tile:
+    The River
+    The Count
+    The River II
+    GQ Mini Expansion
+  Adding the GQ-Mini automatically adds the River I
 
 
