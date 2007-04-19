@@ -41,8 +41,9 @@
         <VASSAL.build.module.map.Zoomer factor="1.5" inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" max="5" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" zoomInKey="" zoomOutKey="" zoomStart="1"/>
         <VASSAL.build.module.map.GlobalMap buttonText="Overview" color="0,0,0" hotkey="79,195" icon="" scale="0.19444444" tooltip="Show/Hide overview window"/>
         <VASSAL.build.module.map.SetupStack name="TableCenter" owningBoard="Table" x="1550" y="1550">
-            <VASSAL.build.widget.PieceSlot entryName="Table Center" height="0" width="0">+/null/immob;cg;V	prototype;shiftable\	piece;;;GameCenter;Table Center/	\	null;0;0</VASSAL.build.widget.PieceSlot>
+            <VASSAL.build.widget.PieceSlot entryName="Table Center" height="0" width="0">+/null/immob;cg;V	prototype;shiftable\	mark;Layer\\	piece;;;GameCenter;Table Center/	\	PartOfTable\\	null;0;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.LayeredPieceCollection layerOrder="PartOfTable,Tiles,Towers,ExtraTokens,PlayerTokens" property="Layer"/>
     </VASSAL.build.module.Map>
     <VASSAL.build.module.gamepieceimage.GamePieceImageDefinitions>
         <VASSAL.build.module.gamepieceimage.ColorManager/>
@@ -62,7 +63,16 @@
     <VASSAL.build.module.PrototypesContainer>
         <VASSAL.build.module.PrototypeDefinition name="removable">+/null/report;68\,195;LANG_$playerName$ removed $newPieceName$ from the game;;;	delete;LANG_Remove from game;68,195\	piece;;;;/-1	\	null;266;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="shiftable">+/null/mark;canShift	piece;;;;/true	null;253;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition name="alltokens">+/null/macro;;;;CurrentMap != Main Map;77\,715;78\,715	prototype;removable\	piece;;;;/	\	null;289;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="tokenFromIC">+/null/mark;settoken	piece;;;;/ic	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="tokenFromTB">+/null/mark;settoken	piece;;;;/tb	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="tokenFromKG">+/null/mark;settoken	piece;;;;/kg	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="tokenFromCO">+/null/mark;settoken	piece;;;;/co	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="tokenFromPD">+/null/mark;settoken	piece;;;;/pd	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="tokenFromTT">+/null/mark;settoken	piece;;;;/tt	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="dragon_common">+/null/report;66\,715;LANG_$playerName$ moved The Dragon back to the extra pieces area;;;Bouncing home	return;;66,715;LANG_ExtraPieces (Dragon)\	macro;Bounce back home;;;;78\,715;66\,715\\	mark;Layer\\\	prototype;tokenFromPD\\\\	prototype;alltokens\\\\\	piece;;;;/-1	\	\\	ExtraTokens\\\	\\\\	\\\\\	null;317;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="fairy_common">+/null/report;66\,715;LANG_$playerName$ moved The Fairy back to the extra pieces area;;;Bouncing home	return;;66,715;LANG_ExtraPieces (Fairy)\	macro;Bounce back home;;;;78\,715;66\,715\\	immob;g;N\\\	mark;Layer\\\\	prototype;tokenFromPD\\\\\	prototype;alltokens\\\\\\	piece;;;;/-1	\	\\	\\\	ExtraTokens\\\\	\\\\\	\\\\\\	null;317;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="alltiles">+/null/mark;Layer	prototype;shiftable\	prototype;removable\\	piece;;;;/Tiles	\	\\	null;0;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="alltokens">+/null/macro;;;;CurrentMap != Main Map;77\,715;78\,715	prototype;shiftable\	prototype;removable\\	piece;;;;/	\	\\	null;0;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="redtoken">+/null/mark;color	mark;owner\	prototype;alltokens\\	piece;;;;/red	LANG_Red\	\\	null;0;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="blacktoken">+/null/mark;color	mark;owner\	prototype;alltokens\\	piece;;;;/black	LANG_Black\	\\	null;298;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition name="greentoken">+/null/mark;color	mark;owner\	prototype;alltokens\\	piece;;;;/green	LANG_Green\	\\	null;298;0</VASSAL.build.module.PrototypeDefinition>
@@ -179,10 +189,34 @@
             <VASSAL.build.widget.PieceSlot entryName="LANG_Yellow" height="0" width="0">+/null/prototype;scoremeeple	prototype;yellowtoken\	piece;;;meeple-yellow-mini.png;LANG_Yellow/	\	null;0;0</VASSAL.build.widget.PieceSlot>
             <VASSAL.build.widget.PieceSlot entryName="LANG_Grey" height="0" width="0">+/null/prototype;scoremeeple	prototype;greytoken\	piece;;;meeple-grey-mini.png;LANG_Grey/	\	null;0;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.DrawPile allowMultiple="false" allowSelect="false" canSave="false" color="0,0,0" draw="true" drawFaceUp="true" faceDown="Never" faceDownFormat="" height="40" name="LANG_ExtraPieces (Dragon)" owningBoard="gwBoard" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" reverseFormat="" reversible="false" shuffle="Never" shuffleFormat="" shuffleHotkey="" width="69" x="454" y="411">
+            <VASSAL.build.widget.CardSlot entryName="LANG_The Dragon" height="0" width="0">+/null/replace;;83,715;+\/null\/footprint\;\;\;true\;true\;10\;255,102,102\;204,0,0\;100\;50\;0\;0\;2.0\	markmoved\;moved\;0\;0\;LANG_Clear Movement Trail\;59,130\\	replace\;\;83,715\;VASSAL.build.module.PrivateMap:LANG_Game Window\\/VASSAL.build.module.map.DrawPile:LANG_ExtraPieces (Dragon)\\/VASSAL.build.widget.CardSlot:LANG_The Dragon\;null\;0\;0\;true\;77,715\;swap with mini\\\	macro\;swap with mini\;\;\;CurrentMap != Main Map\;77\,715\;83\,715\\\\	prototype\;dragon_common\\\\\	piece\;\;\;dragon.png\;The Dragon\/true\;\;0\	false\\	\\\	\\\\	\\\\\	null\;57\;33;null;0;0;true;77,715;Swap with mega	macro;Auto swap with mega dragon;;;CurrentMap = Main Map;77\,715;83\,715\	prototype;dragon_common\\	piece;;;dragon-mini.png;LANG_The Dragon/	\	\\	null;0;0</VASSAL.build.widget.CardSlot>
+        </VASSAL.build.module.map.DrawPile>
+        <VASSAL.build.module.map.DrawPile allowMultiple="false" allowSelect="false" canSave="false" color="0,0,0" draw="true" drawFaceUp="true" faceDown="Never" faceDownFormat="" height="28" name="LANG_ExtraPieces (Fairy)" owningBoard="gwBoard" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" reverseFormat="" reversible="false" shuffle="Never" shuffleFormat="" shuffleHotkey="" width="16" x="487" y="423">
+            <VASSAL.build.widget.CardSlot entryName="LANG_The Fairy" height="0" width="0">+/null/replace;;83,715;+\/null\/replace\;\;83,715\;VASSAL.build.module.PrivateMap:LANG_Game Window\\/VASSAL.build.module.map.DrawPile:LANG_ExtraPieces (Fairy)\\/VASSAL.build.widget.CardSlot:LANG_The Fairy\;null\;0\;0\;true\;77,715\;\	macro\;swap with mini\;\;\;CurrentMap != Main Map\;77\,715\;83\,715\\	prototype\;fairy_common\\\	piece\;\;\;fairy.png\;LANG_The Fairy\/\	\\	\\\	null\;40\;23;null;0;0;true;77,715;	macro;Auto swap with mega fairy;;;CurrentMap = Main Map;77\,715;83\,715\	prototype;fairy_common\\	piece;;;fairy-mini.png;LANG_The Fairy/	\	\\	null;0;0</VASSAL.build.widget.CardSlot>
+        </VASSAL.build.module.map.DrawPile>
+    </VASSAL.build.module.PrivateMap>
+    <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_RiverTiles" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="86,130" icon="" launch="true" mapName="LANG_RiverTiles" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="" moveWithinFormat="" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
+        <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
+            <VASSAL.build.module.map.boardPicker.Board image="rivertiles.png" name="riverBoard" reversible="false"/>
+        </VASSAL.build.module.map.BoardPicker>
+        <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
+        <VASSAL.build.module.map.ForwardToKeyBuffer/>
+        <VASSAL.build.module.map.Scroller/>
+        <VASSAL.build.module.map.ForwardToChatter/>
+        <VASSAL.build.module.map.MenuDisplayer/>
+        <VASSAL.build.module.map.MapCenterer/>
+        <VASSAL.build.module.map.StackExpander/>
+        <VASSAL.build.module.map.PieceMover/>
+        <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.map.ImageSaver buttonText="" hotkey="" icon="/images/camera.gif" tooltip="Save Map as PNG file"/>
+        <VASSAL.build.module.map.CounterDetailViewer bgColor="255,255,255" borderWidth="0" counterReportFormat="" delay="700" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="2" propertyFilter="" showDeck="false" showNoStack="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="" zoomlevel="1.0"/>
+        <VASSAL.build.module.properties.GlobalProperties/>
+        <VASSAL.build.module.map.SelectionHighlighters/>
     </VASSAL.build.module.PrivateMap>
     <VASSAL.build.module.PrivateMap allowMultiple="false" buttonName="LANG_Tiles" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hotkey="84,130" icon="" launch="true" mapName="LANG_Tiles" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" moveKey="77,715" moveToFormat="" moveWithinFormat="" side="LANG_Red,LANG_Black,LANG_Green,LANG_Blue,LANG_Yellow,LANG_Grey" thickness="3" visible="true">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
-            <VASSAL.build.module.map.boardPicker.Board color="204,0,204" height="500" name="tilesBoard" reversible="false" width="500"/>
+            <VASSAL.build.module.map.boardPicker.Board image="tilestacks.png" name="tilesBoard" reversible="false"/>
         </VASSAL.build.module.map.BoardPicker>
         <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
         <VASSAL.build.module.map.ForwardToKeyBuffer/>

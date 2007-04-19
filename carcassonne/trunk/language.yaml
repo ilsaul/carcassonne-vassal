@@ -119,3 +119,27 @@ phrases:
   - phrase: $playerName$ increases $owner$ by 50 points
     en: $playerName$ increases $owner$ by 50 points
     xx: TEST_0035
+  - phrase: RiverTiles
+    en: RiverTiles
+    xx: TEST_0036
+  - phrase: ExtraPieces (Dragon)
+    en: ExtraPieces (Dragon)
+    xx: TEST_0037
+  - phrase: The Dragon
+    en: The Dragon
+    xx: TEST_0038
+  - phrase: Clear Movement Trail
+    en: Clear Movement Trail
+    xx: TEST_0039
+  - phrase: $playerName$ moved The Dragon back to the extra pieces area
+    en: $playerName$ moved The Dragon back to the extra pieces area
+    xx: TEST_0040
+  - phrase: ExtraPieces (Fairy)
+    en: ExtraPieces (Fairy)
+    xx: TEST_0041
+  - phrase: The Fairy
+    en: The Fairy
+    xx: TEST_0042
+  - phrase: $playerName$ moved The Fairy back to the extra pieces area
+    en: $playerName$ moved The Fairy back to the extra pieces area
+    xx: TEST_0043

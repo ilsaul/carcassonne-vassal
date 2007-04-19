@@ -8,20 +8,36 @@ C      6    Increase your score by six
 C      7    Increase your score by seven
 C      8    Increase your score by eight
 C      9    Increase your score by nine
+C      ;    Clear movement trail on dragon
 C      =    Report all scores
 C      F1   Display SVN Info
 C      G    Toggle Game Window
 C      R    Manual return of supply token to player's supply
 C      S    Toggle Setup Window
+C      T    Toggle TileStacks Window
+C      V    Toggle RiverTiles Window
 C      [    Decrease score modifier by 50 (on score meeple)
 C      \    Reset score modifier (on score meeple)
 C      ]    Increase score modifier by 50 (on score meeple)
+C-A-S  B    Automatic return of extra tokens to the right extra tokens deck
 C-A-S  B    Automatic return of score meepls to score track (position zero)
 C-A-S  B    Automatic return of supply token to player's supply
+C-A-S  E    Jailing supply token to Green's supply jail
 C-A-S  F1   Remove all red pieces
+C-A-S  F2   Remove all black pieces
+C-A-S  F3   Remove all green pieces
+C-A-S  F4   Remove all blue pieces
+C-A-S  F5   Remove all yellow pieces
+C-A-S  F6   Remove all grey pieces
 C-A-S  M    Triggered on pieces that move to the game window
 C-A-S  M    Triggered on pieces that move to the main map
+C-A-S  M    Triggered on pieces that move to the rivertiles window
+C-A-S  M    Triggered on pieces that move to the tilestacks window
 C-A-S  N    Triggered on tokens that move to ANY map that is NOT the Main Map
+C-A-S  Q    Jailing supply token to Reds's supply jail
+C-A-S  R    Jailing supply token to Blue's supply jail
 C-A-S  S    SWAP mini token <=> normal 
+C-A-S  T    Jailing supply token to Yellow's supply jail
 C-A-S  W    Jailing supply token to Black's supply jail
+C-A-S  Y    Jailing supply token to Grey's supply jail
 C-S    D    Remove piece from the game (also see prototype called "removable")
