@@ -143,3 +143,15 @@ phrases:
   - phrase: $playerName$ moved The Fairy back to the extra pieces area
     en: $playerName$ moved The Fairy back to the extra pieces area
     xx: TEST_0043
+  - phrase: ExtraPieces (Count)
+    en: ExtraPieces (Count)
+    xx: TEST_0044
+  - phrase: The Count
+    en: The Count
+    xx: TEST_0045
+  - phrase: $playerName$ moved The Count back to the extra pieces area
+    en: $playerName$ moved The Count back to the extra pieces area
+    xx: TEST_0046
+  - phrase: $playerName$ repositioned $newPieceName$
+    en: $playerName$ repositioned $newPieceName$
+    xx: TEST_0047

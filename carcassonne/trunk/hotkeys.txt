@@ -19,6 +19,7 @@ C      V    Toggle RiverTiles Window
 C      [    Decrease score modifier by 50 (on score meeple)
 C      \    Reset score modifier (on score meeple)
 C      ]    Increase score modifier by 50 (on score meeple)
+C-A-S  "    Display the reposition message (applies to all tokens)
 C-A-S  B    Automatic return of extra tokens to the right extra tokens deck
 C-A-S  B    Automatic return of score meepls to score track (position zero)
 C-A-S  B    Automatic return of supply token to player's supply

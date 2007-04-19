@@ -1,3 +1,4 @@
 Just a list of things I can't do yet, but don't want to forget
 
 Make placement of tiles trigger the removal of the Dragon's movement trail
+Make placement of tiles trigger the removal of the Count's movement trail
