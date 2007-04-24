@@ -131,8 +131,8 @@ phrases:
   - phrase: Clear Movement Trail
     en: Clear Movement Trail
     xx: TEST_0039
-  - phrase: $playerName$ moved The Dragon back to the extra pieces area
-    en: $playerName$ moved The Dragon back to the extra pieces area
+  - phrase: XXXXXXXXXXX
+    en: XXXXXXXXXXXXXXXX
     xx: TEST_0040
   - phrase: ExtraPieces (Fairy)
     en: ExtraPieces (Fairy)
@@ -140,8 +140,8 @@ phrases:
   - phrase: The Fairy
     en: The Fairy
     xx: TEST_0042
-  - phrase: $playerName$ moved The Fairy back to the extra pieces area
-    en: $playerName$ moved The Fairy back to the extra pieces area
+  - phrase: $playerName$ moved $newPieceName$ back to the extra pieces area
+    en: $playerName$ moved $newPieceName$ back to the extra pieces area
     xx: TEST_0043
   - phrase: ExtraPieces (Count)
     en: ExtraPieces (Count)
@@ -149,9 +149,15 @@ phrases:
   - phrase: The Count
     en: The Count
     xx: TEST_0045
-  - phrase: $playerName$ moved The Count back to the extra pieces area
-    en: $playerName$ moved The Count back to the extra pieces area
-    xx: TEST_0046
   - phrase: $playerName$ repositioned $newPieceName$
     en: $playerName$ repositioned $newPieceName$
+    xx: TEST_0046
+  - phrase: Automove
+    en: Automove
     xx: TEST_0047
+  - phrase: Red Ubermeeple
+    en: Red Ubermeeple
+    xx: TEST_0048
+  - phrase: " lying down"
+    en: " lying down"
+    xx: TEST_0049
