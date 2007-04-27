@@ -161,3 +161,33 @@ phrases:
   - phrase: " lying down"
     en: " lying down"
     xx: TEST_0049
+  - phrase: "$playerName$ moves $newPieceName$ to Red's jail"
+    en : "$playerName$ moves $newPieceName$ to Red's jail"
+    xx: TEST_0050
+  - phrase: "$playerName$ moves $newPieceName$ to Green's jail"
+    en : "$playerName$ moves $newPieceName$ to Green's jail"
+    xx: TEST_0051
+  - phrase: "$playerName$ moves $newPieceName$ to Blue's jail"
+    en : "$playerName$ moves $newPieceName$ to Blue's jail"
+    xx: TEST_0053
+  - phrase: "$playerName$ moves $newPieceName$ to Yellow's jail"
+    en : "$playerName$ moves $newPieceName$ to Yellow's jail"
+    xx: TEST_0053
+  - phrase: "$playerName$ moves $newPieceName$ to Grey's jail"
+    en : "$playerName$ moves $newPieceName$ to Grey's jail"
+    xx: TEST_0054
+  - phrase: "Red's Supply (jail)"
+    en : "Red's Supply (jail)"
+    xx: TEST_0055
+  - phrase: "Green's Supply (jail)"
+    en : "Green's Supply (jail)"
+    xx: TEST_0056
+  - phrase: "Blue's Supply (jail)"
+    en : "Blue's Supply (jail)"
+    xx: TEST_0057
+  - phrase: "Yellow's Supply (jail)"
+    en : "Yellow's Supply (jail)"
+    xx: TEST_0058
+  - phrase: "Grey's Supply (jail)"
+    en : "Grey's Supply (jail)"
+    xx: TEST_0059
