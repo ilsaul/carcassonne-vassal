@@ -24,7 +24,7 @@ C-A-S  .    Sends any token to the Automove Deck (not sure why this is needed, b
 C-A-S  B    Automatic return of extra tokens to the right extra tokens deck (preceed with C-A-S-.)
 C-A-S  B    Automatic return of score meepls to score track (position zero) (preceed with C-A-S-.)
 C-A-S  B    Automatic return of supply token to player's supply (preceed with C-A-S-.)
-C-A-S  E    Jailing supply token to Green's supply jail (preceed with C-A-S-.)
+C-A-S  E    Sent to Green's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
 C-A-S  F1   Remove all red pieces
 C-A-S  F2   Remove all black pieces
 C-A-S  F3   Remove all green pieces
@@ -36,10 +36,10 @@ C-A-S  M    Triggered on pieces that move to the main map
 C-A-S  M    Triggered on pieces that move to the rivertiles window
 C-A-S  M    Triggered on pieces that move to the tilestacks window
 C-A-S  N    Triggered on tokens that move to ANY map that is NOT the Main Map
-C-A-S  Q    Jailing supply token to Reds's supply jail (preceed with C-A-S-.)
-C-A-S  R    Jailing supply token to Blue's supply jail (preceed with C-A-S-.)
+C-A-S  Q    Sent to Red's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  R    Sent to Blue's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
 C-A-S  S    SWAP mini token <=> normal 
-C-A-S  T    Jailing supply token to Yellow's supply jail (preceed with C-A-S-.)
-C-A-S  W    Jailing supply token to Black's supply jail (preceed with C-A-S-.)
-C-A-S  Y    Jailing supply token to Grey's supply jail (preceed with C-A-S-.)
+C-A-S  T    Sent to Yellow's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  W    Sent to Black's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  Y    Sent to Grey's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
 C-S    D    Remove piece from the game (also see prototype called "removable")

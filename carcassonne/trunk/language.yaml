@@ -35,9 +35,6 @@ phrases:
   - phrase: "Laydown\/Stand Up"
     en: "Laydown\/Stand Up"
     xx: TEST_0008
-  - phrase: "Return to Red's Supply"
-    en: "Return to Red's Supply"
-    xx: TEST_0009
   - phrase: $playerName$ places $pieceName$ onto the playing surface
     en: $playerName$ places $pieceName$ onto the playing surface
     xx: TEST_0010
@@ -155,9 +152,6 @@ phrases:
   - phrase: Automove
     en: Automove
     xx: TEST_0047
-  - phrase: Red Ubermeeple
-    en: Red Ubermeeple
-    xx: TEST_0048
   - phrase: " lying down"
     en: " lying down"
     xx: TEST_0049
@@ -191,3 +185,117 @@ phrases:
   - phrase: "Grey's Supply (jail)"
     en : "Grey's Supply (jail)"
     xx: TEST_0059
+  - phrase: Red Meeple
+    en: Red Meeple
+    xx: TEST_0060
+  - phrase: Red Ubermeeple
+    en: Red Ubermeeple
+    xx: TEST_0061
+  - phrase: Red Builder
+    en: Red Builder
+    xx: TEST_0062
+  - phrase: Red Pig
+    en: Red Pig
+    xx: TEST_0063
+  - phrase: Black Meeple
+    en: Black Meeple
+    xx: TEST_0064
+  - phrase: Black Ubermeeple
+    en: Black Ubermeeple
+    xx: TEST_0065
+  - phrase: Black Builder
+    en: Black Builder
+    xx: TEST_0066
+  - phrase: Black Pig
+    en: Black Pig
+    xx: TEST_0067
+  - phrase: Green Meeple
+    en: Green Meeple
+    xx: TEST_0068
+  - phrase: Green Ubermeeple
+    en: Green Ubermeeple
+    xx: TEST_0069
+  - phrase: Green Builder
+    en: Green Builder
+    xx: TEST_0070
+  - phrase: Green Pig
+    en: Green Pig
+    xx: TEST_0071
+  - phrase: Blue Meeple
+    en: Blue Meeple
+    xx: TEST_0072
+  - phrase: Blue Ubermeeple
+    en: Blue Ubermeeple
+    xx: TEST_0073
+  - phrase: Blue Builder
+    en: Blue Builder
+    xx: TEST_0074
+  - phrase: Blue Pig
+    en: Blue Pig
+    xx: TEST_0075
+  - phrase: Yellow Meeple
+    en: Yellow Meeple
+    xx: TEST_0076
+  - phrase: Yellow Ubermeeple
+    en: Yellow Ubermeeple
+    xx: TEST_0077
+  - phrase: Yellow Builder
+    en: Yellow Builder
+    xx: TEST_0078
+  - phrase: Yellow Pig
+    en: Yellow Pig
+    xx: TEST_0079
+  - phrase: Grey Meeple
+    en: Grey Meeple
+    xx: TEST_0080
+  - phrase: Grey Ubermeeple
+    en: Grey Ubermeeple
+    xx: TEST_0081
+  - phrase: Grey Builder
+    en: Grey Builder
+    xx: TEST_0082
+  - phrase: Grey Pig
+    en: Grey Pig
+    xx: TEST_0083
+  - phrase: "Return to Red's Supply"
+    en: "Return to Red's Supply"
+    xx: TEST_0084
+  - phrase: "Return to Black's Supply"
+    en: "Return to Black's Supply"
+    xx: TEST_0085
+  - phrase: "Return to Green's Supply"
+    en: "Return to Green's Supply"
+    xx: TEST_0086
+  - phrase: "Return to Blue's Supply"
+    en: "Return to Blue's Supply"
+    xx: TEST_0087
+  - phrase: "Return to Yellow's Supply"
+    en: "Return to Yellow's Supply"
+    xx: TEST_0088
+  - phrase: "Return to Grey's Supply"
+    en: "Return to Grey's Supply"
+    xx: TEST_0089
+  - phrase: "$playerName$ moves $newPieceName$ to Red's supply"
+    en: "$playerName$ moves $newPieceName$ to Red's supply"
+    xx: TEST_0090
+  - phrase: "$playerName$ moves $newPieceName$ to Black's supply"
+    en: "$playerName$ moves $newPieceName$ to Black's supply"
+    xx: TEST_0091
+  - phrase: "$playerName$ moves $newPieceName$ to Green's supply"
+    en: "$playerName$ moves $newPieceName$ to Green's supply"
+    xx: TEST_0092
+  - phrase: "$playerName$ moves $newPieceName$ to Blue's supply"
+    en: "$playerName$ moves $newPieceName$ to Blue's supply"
+    xx: TEST_0093
+  - phrase: "$playerName$ moves $newPieceName$ to Yellow's supply"
+    en: "$playerName$ moves $newPieceName$ to Yellow's supply"
+    xx: TEST_0094
+  - phrase: "$playerName$ moves $newPieceName$ to Grey's supply"
+    en: "$playerName$ moves $newPieceName$ to Grey's supply"
+    xx: TEST_0095
+  - phrase: ExtraPieces (Cloth)
+    en: ExtraPieces (Cloth)
+    xx: TEST_0096
+  - phrase: Cloth Chit
+    en: Cloth Chit
+    xx: TEST_0097
