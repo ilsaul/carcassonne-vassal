@@ -299,3 +299,45 @@ phrases:
   - phrase: Cloth Chit
     en: Cloth Chit
     xx: TEST_0097
+  - phrase: "$playerName$ moves $newPieceName$ to Extra Pieces area"
+    en: "$playerName$ moves $newPieceName$ to Extra Pieces area"
+    xx: TEST_0098
+  - phrase: ExtraPieces (Wheat)
+    en: ExtraPieces (Wheat)
+    xx: TEST_0099
+  - phrase: Wheat Chit
+    en: Wheat Chit
+    xx: TEST_0100
+  - phrase: ExtraPieces (Wine)
+    en: ExtraPieces (Wine)
+    xx: TEST_0101
+  - phrase: Wine Chit
+    en: Wine Chit
+    xx: TEST_0102
+  - phrase: ExtraPieces (Towers)
+    en: ExtraPieces (Towers)
+    xx: TEST_0103
+  - phrase: Tower
+    en: Tower
+    xx: TEST_0104
+  - phrase: ExtraPieces (King)
+    en: ExtraPieces (King)
+    xx: TEST_0105
+  - phrase: The King
+    en: The King
+    xx: TEST_0106
+  - phrase: ExtraPieces (Robber)
+    en: ExtraPieces (Robber)
+    xx: TEST_0107
+  - phrase: The Robber
+    en: The Robber
+    xx: TEST_0108
+  - phrase: Place Tile
+    en: Place Tile
+    xx: TEST_0109
+  - phrase: Rotate CCW
+    en: Rotate CCW
+    xx: TEST_0110
+  - phrase: Rotate CW
+    en: Rotate CW
+    xx: TEST_0111
