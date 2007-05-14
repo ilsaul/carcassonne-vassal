@@ -341,3 +341,45 @@ phrases:
   - phrase: Rotate CW
     en: Rotate CW
     xx: TEST_0111
+  - phrase: $playerName$ has finished their move
+    en: $playerName$ has finished their move
+    xx: TEST_0112
+  - phrase: Signal the completion of your move
+    en: Signal the completion of your move
+    xx: TEST_0113
+  - phrase: Finished
+    en: Finished
+    xx: TEST_0114
+  - phrase: $playerName$ removes all green pieces
+    en: $playerName$ removes all green pieces
+    xx: TEST_0115
+  - phrase: $playerName$ removes all blue pieces
+    en: $playerName$ removes all blue pieces
+    xx: TEST_0116
+  - phrase: $playerName$ removes all yellow pieces
+    en: $playerName$ removes all yellow pieces
+    xx: TEST_0117
+  - phrase: $playerName$ removes all grey pieces
+    en: $playerName$ removes all grey pieces
+    xx: TEST_0118
+  - phrase: $playerName$ shifted the table
+    en: $playerName$ shifted the table
+    xx: TEST_0119
+  - phrase: Shift Entire Table Up
+    en: Shift Entire Table Up
+    xx: TEST_0120
+  - phrase: Shift Entire Table Down
+    en: Shift Entire Table Down
+    xx: TEST_0121
+  - phrase: Shift Entire Table Left
+    en: Shift Entire Table Left
+    xx: TEST_0122
+  - phrase: Shift Entire Table Right
+    en: Shift Entire Table Right
+    xx: TEST_0123
+  - phrase: Add Expansions
+    en: Add Expansions
+    xx: TEST_0124
+  - phrase: Remove Colors
+    en: Remove Colors
+    xx: TEST_0125

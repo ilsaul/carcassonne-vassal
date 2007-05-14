@@ -38,7 +38,7 @@ Tiles                                         Tokens
 
 Add Tiles                                     Remove Colors
 
-  Carcassonne                                   Red
+                                                Red
   The River                                     Black
   Inns & Cathedrals                             Green
   Traders & Builders                            Blue
@@ -60,7 +60,7 @@ Remove Set Tokens
   The Tower (tower pieces)
 
 Notes on additions
-  Adding The Count assebles the city of Carcassonne on the table
+  Adding The Count assembles the city of Carcassonne on the table
   Adding any of the following automatically removes the standard start tile:
     The River
     The Count
