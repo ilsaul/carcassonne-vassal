@@ -383,3 +383,66 @@ phrases:
   - phrase: Remove Colors
     en: Remove Colors
     xx: TEST_0125
+  - phrase: The River I
+    en: The River I
+    xx: TEST_0126
+  - phrase: "Inns &amp; Cathedrals"
+    en: "Inns &amp; Cathedrals"
+    xx: TEST_0127
+  - phrase: "Traders &amp; Builders"
+    en: "Traders &amp; Builders"
+    xx: TEST_0128
+  - phrase: "The Cathars"
+    en: "The Cathars"
+    xx: TEST_0129
+  - phrase: "The Princess &amp; The Dragon"
+    en: "The Princess &amp; The Dragon"
+    xx: TEST_0130
+  - phrase: "The Tower"
+    en: "The Tower"
+    xx: TEST_0131
+  - phrase: "GQ Mini Expansion"
+    en: "GQ Mini Expansion"
+    xx: TEST_0132
+  - phrase: "$playerName$ adds The River I"
+    en : "$playerName$ adds The River I"
+    xx: TEST_0133
+  - phrase: Remove Extras
+    en: Remove Extras
+    xx: TEST_0134
+  - phrase: Standard Start Tile
+    en: Standard Start Tile
+    xx: TEST_0135
+  - phrase: "$playerName$ draws $pieceName$ ($previousLocation$ =&gt; $location$)"
+    en: "$playerName$ draws $pieceName$ ($previousLocation$ =&gt; $location$)"
+    xx: TEST_0136
+  - phrase: Temporary Stack
+    en: Temporary Stack
+    xx: TEST_0137
+  - phrase: Draw Stack
+    en: Draw Stack
+    xx: TEST_0138
+  - phrase: Box
+    en: Box
+    xx: TEST_0139
+  - phrase: River Draw Stack
+    en: River Draw Stack
+    xx: TEST_0140
+  - phrase: Spring Stack
+    en: Spring Stack
+    xx: TEST_0141
+  - phrase: Lake Stack
+    en: Lake Stack
+    xx: TEST_0142
+  - phrase: Temporary River Stack
+    en: Temporary River Stack
+    xx: TEST_0143
+  - phrase: "$playerName$ adds Inns &amp; Cathedrals"
+    en : "$playerName$ adds Inns &amp; Cathedrals"
+    xx: TEST_0144
+  - phrase: "$playerName$ adds Traders &amp; Builders"
+    en : "$playerName$ adds Traders &amp; Builders"
+    xx: TEST_0145
+  - phrase: "$playerName$ adds The King"
+    en : "$playerName$ adds The King"
+    xx: TEST_0146
