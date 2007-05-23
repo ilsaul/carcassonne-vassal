@@ -68,4 +68,14 @@ Notes on additions
     GQ Mini Expansion
   Adding the GQ-Mini automatically adds the River I
 
+Count start locations:
+   
+   001                  002                      003                  004
+   1450,1450            1550,1450                1650,1450            1750,1450
 
+
+   005                  006                      007                  008
+   1450,1550            1550,1550                1650,1550            1750,1550
+
+   009                  010                      011                  012
+   1450,1650            1550,1650                1650,1650            1750,1650
