@@ -455,3 +455,27 @@ phrases:
   - phrase: "$playerName$ adds The Count of Carcassonne"
     en : "$playerName$ adds The Count of Carcassonne"
     xx: TEST_0149
+  - phrase: "$playerName$ adds The River II"
+    en : "$playerName$ adds The River II"
+    xx: TEST_0150
+  - phrase: Spring (from River I)
+    en: Spring (from River I)
+    xx: TEST_0151
+  - phrase: Lake
+    en: Lake
+    xx: TEST_0152
+  - phrase: Lake w/City
+    en: Lake w/City
+    xx: TEST_0153
+  - phrase: Lake w/Volcano
+    en: Lake w/Volcano
+    xx: TEST_0154
+  - phrase: Spring (from River II)
+    en: Spring (from River II)
+    xx: TEST_0155
+  - phrase: "$playerName$ adds The Tower"
+    en : "$playerName$ adds The Tower"
+    xx: TEST_0156
+  - phrase: Spring (from GQ mini)
+    en: Spring (from GQ mini)
+    xx: TEST_0157
