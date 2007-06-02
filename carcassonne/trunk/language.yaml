@@ -479,3 +479,18 @@ phrases:
   - phrase: Spring (from GQ mini)
     en: Spring (from GQ mini)
     xx: TEST_0157
+  - phrase: "$playerName$ adds The GQ Mini Expansion"
+    en : "$playerName$ adds The GQ Mini Expansion"
+    xx: TEST_0150
+  - phrase: RAbbr
+    en : Road
+    xx: TEST_0158
+  - phrase: Set the longest road
+    en : Set the longest road
+    xx: TEST_0159
+  - phrase: CAbbr
+    en : City
+    xx: TEST_0160
+  - phrase: Set the largest city
+    en : Set the largest city
+    xx: TEST_0161

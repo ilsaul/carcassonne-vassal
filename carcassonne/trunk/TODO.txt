@@ -1,9 +1,7 @@
 Just a list of things I can't do yet, but don't want to forget
 
-Make placement of tiles trigger the removal of the Dragon's movement trail
-Make placement of tiles trigger the removal of the Count's movement trail
+NOT DOING... Make placement of tiles trigger the removal of the Dragon's movement trail
+NOT DOING... Make placement of tiles trigger the removal of the Count's movement trail
 
 Be sure that player supply JAILS are not visually FLAT (waiting on 3.0)
 Fix King/Robber counts (waiting on 3.0)
-
-Add GLOBAL hot-key to create road / tile counts for Robber/King
