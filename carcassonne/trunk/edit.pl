@@ -42,7 +42,7 @@ Win32::Process::Create(
   ".") || mydie(ErrorReport());
 
 END {
-  sleep 2;
+  sleep 5;
   unlink $jnlp;
 }
 

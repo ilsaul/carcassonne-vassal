@@ -156,7 +156,7 @@ public class ScoreControl extends AbstractConfigurable {
       }
       
       // determine the raw score (position on the board)
-      int rawScore = Integer.parseInt(s.getMap().getFullLocationName(s.getPosition(),false));
+      int rawScore = Integer.parseInt(s.getMap().locationName(s.getPosition()));
      
       // report the sum to the local chatter 
       toPrivateChatter("    "+s.getProperty("owner")+": "+ (rawScore + modifier));
@@ -185,7 +185,7 @@ public class ScoreControl extends AbstractConfigurable {
       Map   currentMap   = myScoreMeeple.getMap();
       
       // determine what our score currently is
-      int currentScore = Integer.parseInt(currentMap.getFullLocationName(currentPoint,false));
+      int currentScore = Integer.parseInt(currentMap.locationName(currentPoint));
       
       // calculate the new score
       int newScore = currentScore + increase;
