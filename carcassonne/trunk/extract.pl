@@ -28,6 +28,10 @@ sub extract_module {
     print "    Not extracting java class... " . $java->fileName() . "\n";
     $mod->removeMember($java);
   }
+  foreach my $help ( $mod->membersMatching('^help') ) {
+    print "    Not extracting help file... " . $help->fileName() . "\n";
+    $mod->removeMember($help);
+  }
   $mod->extractTree( '','./build/' );
 }
 

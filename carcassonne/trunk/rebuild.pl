@@ -21,6 +21,15 @@ sub main {
   #sleep 2;
 }
 
+sub build_guide {
+  print "  rebuilding the player guide\n";
+  my $guide_file = "Player_Guide";
+  my $guide = new Archive::Zip;
+  $guide->addTree( './guidesrc', '', \&select_files );
+  $guide->writeToFileNamed( $guide_file );
+  return $guide_file;
+}
+
 sub build_module {
   print "  rebuilding the main module\n";
   my $module_file = "$config->{name}-$config->{version}.mod";
@@ -29,13 +38,20 @@ sub build_module {
   if (-d "$config->{name}-java/bin/com") {
     $mod->addTree( "$config->{name}-java/bin/com", 'com', \&select_files_class );
   }
+  if (-d "guidesrc") {
+    my $guide_file  = build_guide();
+    $mod->addDirectory( 'help' );
+    $mod->addFile( 'Player_Guide', 'help/Player_Guide' );
+  }
   $mod->writeToFileNamed( $module_file );
+  unlink 'Player_Guide';
   return $module_file;
 }
 
 sub clean {
   print "  removing any existing files\n";
   unlink glob("$config->{name}*.mod");
+  unlink glob("Player_Guide");
 }
 
 sub select_files {
