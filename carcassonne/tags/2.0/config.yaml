@@ -1,0 +1,5 @@
+## Configuration file for building this VASSAL module
+---
+name: carcassonne
+version: 2.0
+javaws: C:/Program Files/Java/jre1.6.0_01/bin/javaws.exe

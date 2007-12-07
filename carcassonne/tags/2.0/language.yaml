@@ -1,0 +1,496 @@
+## Language translation map for this VASSAL module
+---
+langs:
+  English:
+    abbr: en
+  Test:
+    abbr: xx
+#  Espanol:
+#    abbr: es
+phrases:
+#  - phrase: LANG_the phrase (without the LANG_)
+#    en: The Phrase in en
+#    es: The Phrase in es
+  - phrase: CarcassonneModule
+    en: Carcassonne
+    xx: TEST_0001
+  - phrase: Language
+    en: English
+    xx: TEST_0002
+  - phrase: About Carcassonne
+    en: About Carcassonne
+    xx: TEST_0003
+  - phrase: Join/Leave
+    en: Join/Leave
+    xx: TEST_0004
+  - phrase: Join this game or allow another player to take your side in this game
+    en: Join this game or allow another player to take your side in this game
+    xx: TEST_0005
+  - phrase: "$playerName$ moves $newPieceName$ to Black's jail"
+    en : "$playerName$ moves $newPieceName$ to Black's jail"
+    xx: TEST_0006
+  - phrase: "$playerName$ changes the stance of $newPieceName$"
+    en : "$playerName$ changes the stance of $newPieceName$"
+    xx: TEST_0007
+  - phrase: "Laydown\/Stand Up"
+    en: "Laydown\/Stand Up"
+    xx: TEST_0008
+  - phrase: $playerName$ places $pieceName$ onto the playing surface
+    en: $playerName$ places $pieceName$ onto the playing surface
+    xx: TEST_0010
+  - phrase: $playerName$ removed $newPieceName$ from the game
+    en: $playerName$ removed $newPieceName$ from the game
+    xx: TEST_0011
+  - phrase: $playerName$ removes all red pieces
+    en: $playerName$ removes all red pieces
+    xx: TEST_0012
+  - phrase: $playerName$ removes all black pieces
+    en: $playerName$ removes all black pieces
+    xx: TEST_0013
+  - phrase: $playerName$ moves $newPieceName$ to $location$
+    en: $playerName$ moves $newPieceName$ to $location$
+    xx: TEST_0014
+  - phrase: Adjust Game Components
+    en: Adjust Game Components
+    xx: TEST_0015
+  - phrase: Remove colors
+    en: Remove colors
+    xx: TEST_0016
+  - phrase: Remove from game
+    en: Remove from game
+    xx: TEST_0017
+  - phrase: Extra Pieces
+    en: Extra Pieces
+    xx: TEST_0018
+  - phrase: Score Track
+    en: Score Track
+    xx: TEST_0019
+  - phrase: Red
+    en: Red
+    xx: TEST_0020
+  - phrase: "Black's Supply (jail)"
+    en : "Black's Supply (jail)"
+    xx: TEST_0021
+  - phrase: Black
+    en: Black
+    xx: TEST_0022
+  - phrase: Green
+    en: Green
+    xx: TEST_0023
+  - phrase: Blue
+    en: Blue
+    xx: TEST_0024
+  - phrase: Yellow
+    en: Yellow
+    xx: TEST_0025
+  - phrase: Grey
+    en: Grey
+    xx: TEST_0026
+  - phrase: Game Window
+    en: Game Window
+    xx: TEST_0027
+  - phrase: Setup Window
+    en: Setup Window
+    xx: TEST_0028
+  - phrase: Tiles
+    en: Tiles
+    xx: TEST_0029
+  - phrase: Table Center
+    en: Table Center
+    xx: TEST_0030
+  - phrase: $playerName$ moved score meeple $newPieceName$ off the scoreboard?  Sending back to the scoreboard.
+    en: $playerName$ moved score meeple $newPieceName$ off the scoreboard?  Sending back to the scoreboard.
+    xx: TEST_0031
+  - phrase: $playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)
+    en: $playerName$ moves $pieceName$ ($previousLocation$ =&gt; $location$)
+    xx: TEST_0032
+  - phrase: Increase score by 50
+    en: Increase score by 50
+    xx: TEST_0033
+  - phrase: Decrease score by 50
+    en: Decrease score by 50
+    xx: TEST_0034
+  - phrase: $playerName$ decreases $owner$ by 50 points
+    en: $playerName$ decreases $owner$ by 50 points
+    xx: TEST_0035
+  - phrase: $playerName$ increases $owner$ by 50 points
+    en: $playerName$ increases $owner$ by 50 points
+    xx: TEST_0035
+  - phrase: RiverTiles
+    en: RiverTiles
+    xx: TEST_0036
+  - phrase: ExtraPieces (Dragon)
+    en: ExtraPieces (Dragon)
+    xx: TEST_0037
+  - phrase: The Dragon
+    en: The Dragon
+    xx: TEST_0038
+  - phrase: Clear Movement Trail
+    en: Clear Movement Trail
+    xx: TEST_0039
+  - phrase: XXXXXXXXXXX
+    en: XXXXXXXXXXXXXXXX
+    xx: TEST_0040
+  - phrase: ExtraPieces (Fairy)
+    en: ExtraPieces (Fairy)
+    xx: TEST_0041
+  - phrase: The Fairy
+    en: The Fairy
+    xx: TEST_0042
+  - phrase: $playerName$ moved $newPieceName$ back to the extra pieces area
+    en: $playerName$ moved $newPieceName$ back to the extra pieces area
+    xx: TEST_0043
+  - phrase: ExtraPieces (Count)
+    en: ExtraPieces (Count)
+    xx: TEST_0044
+  - phrase: The Count
+    en: The Count
+    xx: TEST_0045
+  - phrase: $playerName$ repositioned $newPieceName$
+    en: $playerName$ repositioned $newPieceName$
+    xx: TEST_0046
+  - phrase: Automove
+    en: Automove
+    xx: TEST_0047
+  - phrase: " lying down"
+    en: " lying down"
+    xx: TEST_0049
+  - phrase: "$playerName$ moves $newPieceName$ to Red's jail"
+    en : "$playerName$ moves $newPieceName$ to Red's jail"
+    xx: TEST_0050
+  - phrase: "$playerName$ moves $newPieceName$ to Green's jail"
+    en : "$playerName$ moves $newPieceName$ to Green's jail"
+    xx: TEST_0051
+  - phrase: "$playerName$ moves $newPieceName$ to Blue's jail"
+    en : "$playerName$ moves $newPieceName$ to Blue's jail"
+    xx: TEST_0053
+  - phrase: "$playerName$ moves $newPieceName$ to Yellow's jail"
+    en : "$playerName$ moves $newPieceName$ to Yellow's jail"
+    xx: TEST_0053
+  - phrase: "$playerName$ moves $newPieceName$ to Grey's jail"
+    en : "$playerName$ moves $newPieceName$ to Grey's jail"
+    xx: TEST_0054
+  - phrase: "Red's Supply (jail)"
+    en : "Red's Supply (jail)"
+    xx: TEST_0055
+  - phrase: "Green's Supply (jail)"
+    en : "Green's Supply (jail)"
+    xx: TEST_0056
+  - phrase: "Blue's Supply (jail)"
+    en : "Blue's Supply (jail)"
+    xx: TEST_0057
+  - phrase: "Yellow's Supply (jail)"
+    en : "Yellow's Supply (jail)"
+    xx: TEST_0058
+  - phrase: "Grey's Supply (jail)"
+    en : "Grey's Supply (jail)"
+    xx: TEST_0059
+  - phrase: Red Meeple
+    en: Red Meeple
+    xx: TEST_0060
+  - phrase: Red Ubermeeple
+    en: Red Ubermeeple
+    xx: TEST_0061
+  - phrase: Red Builder
+    en: Red Builder
+    xx: TEST_0062
+  - phrase: Red Pig
+    en: Red Pig
+    xx: TEST_0063
+  - phrase: Black Meeple
+    en: Black Meeple
+    xx: TEST_0064
+  - phrase: Black Ubermeeple
+    en: Black Ubermeeple
+    xx: TEST_0065
+  - phrase: Black Builder
+    en: Black Builder
+    xx: TEST_0066
+  - phrase: Black Pig
+    en: Black Pig
+    xx: TEST_0067
+  - phrase: Green Meeple
+    en: Green Meeple
+    xx: TEST_0068
+  - phrase: Green Ubermeeple
+    en: Green Ubermeeple
+    xx: TEST_0069
+  - phrase: Green Builder
+    en: Green Builder
+    xx: TEST_0070
+  - phrase: Green Pig
+    en: Green Pig
+    xx: TEST_0071
+  - phrase: Blue Meeple
+    en: Blue Meeple
+    xx: TEST_0072
+  - phrase: Blue Ubermeeple
+    en: Blue Ubermeeple
+    xx: TEST_0073
+  - phrase: Blue Builder
+    en: Blue Builder
+    xx: TEST_0074
+  - phrase: Blue Pig
+    en: Blue Pig
+    xx: TEST_0075
+  - phrase: Yellow Meeple
+    en: Yellow Meeple
+    xx: TEST_0076
+  - phrase: Yellow Ubermeeple
+    en: Yellow Ubermeeple
+    xx: TEST_0077
+  - phrase: Yellow Builder
+    en: Yellow Builder
+    xx: TEST_0078
+  - phrase: Yellow Pig
+    en: Yellow Pig
+    xx: TEST_0079
+  - phrase: Grey Meeple
+    en: Grey Meeple
+    xx: TEST_0080
+  - phrase: Grey Ubermeeple
+    en: Grey Ubermeeple
+    xx: TEST_0081
+  - phrase: Grey Builder
+    en: Grey Builder
+    xx: TEST_0082
+  - phrase: Grey Pig
+    en: Grey Pig
+    xx: TEST_0083
+  - phrase: "Return to Red's Supply"
+    en: "Return to Red's Supply"
+    xx: TEST_0084
+  - phrase: "Return to Black's Supply"
+    en: "Return to Black's Supply"
+    xx: TEST_0085
+  - phrase: "Return to Green's Supply"
+    en: "Return to Green's Supply"
+    xx: TEST_0086
+  - phrase: "Return to Blue's Supply"
+    en: "Return to Blue's Supply"
+    xx: TEST_0087
+  - phrase: "Return to Yellow's Supply"
+    en: "Return to Yellow's Supply"
+    xx: TEST_0088
+  - phrase: "Return to Grey's Supply"
+    en: "Return to Grey's Supply"
+    xx: TEST_0089
+  - phrase: "$playerName$ moves $newPieceName$ to Red's supply"
+    en: "$playerName$ moves $newPieceName$ to Red's supply"
+    xx: TEST_0090
+  - phrase: "$playerName$ moves $newPieceName$ to Black's supply"
+    en: "$playerName$ moves $newPieceName$ to Black's supply"
+    xx: TEST_0091
+  - phrase: "$playerName$ moves $newPieceName$ to Green's supply"
+    en: "$playerName$ moves $newPieceName$ to Green's supply"
+    xx: TEST_0092
+  - phrase: "$playerName$ moves $newPieceName$ to Blue's supply"
+    en: "$playerName$ moves $newPieceName$ to Blue's supply"
+    xx: TEST_0093
+  - phrase: "$playerName$ moves $newPieceName$ to Yellow's supply"
+    en: "$playerName$ moves $newPieceName$ to Yellow's supply"
+    xx: TEST_0094
+  - phrase: "$playerName$ moves $newPieceName$ to Grey's supply"
+    en: "$playerName$ moves $newPieceName$ to Grey's supply"
+    xx: TEST_0095
+  - phrase: ExtraPieces (Cloth)
+    en: ExtraPieces (Cloth)
+    xx: TEST_0096
+  - phrase: Cloth Chit
+    en: Cloth Chit
+    xx: TEST_0097
+  - phrase: "$playerName$ moves $newPieceName$ to Extra Pieces area"
+    en: "$playerName$ moves $newPieceName$ to Extra Pieces area"
+    xx: TEST_0098
+  - phrase: ExtraPieces (Wheat)
+    en: ExtraPieces (Wheat)
+    xx: TEST_0099
+  - phrase: Wheat Chit
+    en: Wheat Chit
+    xx: TEST_0100
+  - phrase: ExtraPieces (Wine)
+    en: ExtraPieces (Wine)
+    xx: TEST_0101
+  - phrase: Wine Chit
+    en: Wine Chit
+    xx: TEST_0102
+  - phrase: ExtraPieces (Towers)
+    en: ExtraPieces (Towers)
+    xx: TEST_0103
+  - phrase: Tower
+    en: Tower
+    xx: TEST_0104
+  - phrase: ExtraPieces (King)
+    en: ExtraPieces (King)
+    xx: TEST_0105
+  - phrase: The King
+    en: The King
+    xx: TEST_0106
+  - phrase: ExtraPieces (Robber)
+    en: ExtraPieces (Robber)
+    xx: TEST_0107
+  - phrase: The Robber
+    en: The Robber
+    xx: TEST_0108
+  - phrase: Place Tile
+    en: Place Tile
+    xx: TEST_0109
+  - phrase: Rotate CCW
+    en: Rotate CCW
+    xx: TEST_0110
+  - phrase: Rotate CW
+    en: Rotate CW
+    xx: TEST_0111
+  - phrase: $playerName$ has finished their move
+    en: $playerName$ has finished their move
+    xx: TEST_0112
+  - phrase: Signal the completion of your move
+    en: Signal the completion of your move
+    xx: TEST_0113
+  - phrase: Finished
+    en: Finished
+    xx: TEST_0114
+  - phrase: $playerName$ removes all green pieces
+    en: $playerName$ removes all green pieces
+    xx: TEST_0115
+  - phrase: $playerName$ removes all blue pieces
+    en: $playerName$ removes all blue pieces
+    xx: TEST_0116
+  - phrase: $playerName$ removes all yellow pieces
+    en: $playerName$ removes all yellow pieces
+    xx: TEST_0117
+  - phrase: $playerName$ removes all grey pieces
+    en: $playerName$ removes all grey pieces
+    xx: TEST_0118
+  - phrase: $playerName$ shifted the table
+    en: $playerName$ shifted the table
+    xx: TEST_0119
+  - phrase: Shift Entire Table Up
+    en: Shift Entire Table Up
+    xx: TEST_0120
+  - phrase: Shift Entire Table Down
+    en: Shift Entire Table Down
+    xx: TEST_0121
+  - phrase: Shift Entire Table Left
+    en: Shift Entire Table Left
+    xx: TEST_0122
+  - phrase: Shift Entire Table Right
+    en: Shift Entire Table Right
+    xx: TEST_0123
+  - phrase: Add Expansions
+    en: Add Expansions
+    xx: TEST_0124
+  - phrase: Remove Colors
+    en: Remove Colors
+    xx: TEST_0125
+  - phrase: The River I
+    en: The River I
+    xx: TEST_0126
+  - phrase: "Inns &amp; Cathedrals"
+    en: "Inns &amp; Cathedrals"
+    xx: TEST_0127
+  - phrase: "Traders &amp; Builders"
+    en: "Traders &amp; Builders"
+    xx: TEST_0128
+  - phrase: "The Cathars"
+    en: "The Cathars"
+    xx: TEST_0129
+  - phrase: "The Princess &amp; The Dragon"
+    en: "The Princess &amp; The Dragon"
+    xx: TEST_0130
+  - phrase: "The Tower"
+    en: "The Tower"
+    xx: TEST_0131
+  - phrase: "GQ Mini Expansion"
+    en: "GQ Mini Expansion"
+    xx: TEST_0132
+  - phrase: "$playerName$ adds The River I"
+    en : "$playerName$ adds The River I"
+    xx: TEST_0133
+  - phrase: Remove Extras
+    en: Remove Extras
+    xx: TEST_0134
+  - phrase: Standard Start Tile
+    en: Standard Start Tile
+    xx: TEST_0135
+  - phrase: "$playerName$ draws $pieceName$ ($previousLocation$ =&gt; $location$)"
+    en: "$playerName$ draws $pieceName$ ($previousLocation$ =&gt; $location$)"
+    xx: TEST_0136
+  - phrase: Temporary Stack
+    en: Temporary Stack
+    xx: TEST_0137
+  - phrase: Draw Stack
+    en: Draw Stack
+    xx: TEST_0138
+  - phrase: Box
+    en: Box
+    xx: TEST_0139
+  - phrase: River Draw Stack
+    en: River Draw Stack
+    xx: TEST_0140
+  - phrase: Spring Stack
+    en: Spring Stack
+    xx: TEST_0141
+  - phrase: Lake Stack
+    en: Lake Stack
+    xx: TEST_0142
+  - phrase: Temporary River Stack
+    en: Temporary River Stack
+    xx: TEST_0143
+  - phrase: "$playerName$ adds Inns &amp; Cathedrals"
+    en : "$playerName$ adds Inns &amp; Cathedrals"
+    xx: TEST_0144
+  - phrase: "$playerName$ adds Traders &amp; Builders"
+    en : "$playerName$ adds Traders &amp; Builders"
+    xx: TEST_0145
+  - phrase: "$playerName$ adds The King"
+    en : "$playerName$ adds The King"
+    xx: TEST_0146
+  - phrase: "$playerName$ adds The Cathars"
+    en : "$playerName$ adds The Cathars"
+    xx: TEST_0147
+  - phrase: "$playerName$ adds The Princess &amp; The Dragon"
+    en: "$playerName$ adds The Princess &amp; The Dragon"
+    xx: TEST_0148
+  - phrase: "$playerName$ adds The Count of Carcassonne"
+    en : "$playerName$ adds The Count of Carcassonne"
+    xx: TEST_0149
+  - phrase: "$playerName$ adds The River II"
+    en : "$playerName$ adds The River II"
+    xx: TEST_0150
+  - phrase: Spring (from River I)
+    en: Spring (from River I)
+    xx: TEST_0151
+  - phrase: Lake
+    en: Lake
+    xx: TEST_0152
+  - phrase: Lake w/City
+    en: Lake w/City
+    xx: TEST_0153
+  - phrase: Lake w/Volcano
+    en: Lake w/Volcano
+    xx: TEST_0154
+  - phrase: Spring (from River II)
+    en: Spring (from River II)
+    xx: TEST_0155
+  - phrase: "$playerName$ adds The Tower"
+    en : "$playerName$ adds The Tower"
+    xx: TEST_0156
+  - phrase: Spring (from GQ mini)
+    en: Spring (from GQ mini)
+    xx: TEST_0157
+  - phrase: "$playerName$ adds The GQ Mini Expansion"
+    en : "$playerName$ adds The GQ Mini Expansion"
+    xx: TEST_0150
+  - phrase: RAbbr
+    en : Road
+    xx: TEST_0158
+  - phrase: Set the longest road
+    en : Set the longest road
+    xx: TEST_0159
+  - phrase: CAbbr
+    en : City
+    xx: TEST_0160
+  - phrase: Set the largest city
+    en : Set the largest city
+    xx: TEST_0161

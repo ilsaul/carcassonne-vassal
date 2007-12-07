@@ -1,0 +1,54 @@
+Highlight prototype - 
+  - C-A-S_Q - Enable Red Highlight
+  - C-A-S_W - Enable Black Highlight
+  - C-A-S_E - Enable Green Highlight
+  - C-A-S_R - Enable Blue Highlight
+  - C-A-S_T - Enable Yellow Highlight
+  - C-A-S_Y - Enable Grey Highlight
+  - C-A-S_U - Disables ALL Highlights
+
+isplaced dynamic property -
+  - 0 - Never Placed   (default for "anytile")
+  - 1 - Last Placed    (default for "placedtile")
+  - 2 - Already Placed (Set by C-A-S_PERIOD)
+
+whoplaced dynamic property -
+  - nobody        - (default)
+  - LANG_Red      - (C-A-S_A)
+  - LANG_Black    - (C-A-S_S)
+  - LANG_Green    - (C-A-S_D)
+  - LANG_Blue     - (C-A-S_F)
+  - LANG_Yellow   - (C-A-S_G)
+  - LANG_Grey     - (C-A-S_H)
+
+Both "anytile" & "placedtile" gets highlight prototype  (highlight proto must be below the player restriction in "placedtile"
+
+"anytile" gets a trigger for CTRL-P
+  If playerSide = LANG_Red && CurrentMap = Main Map
+    C-A-S_P (triggers C-A-S_P for all "placedtiles" that match [isplaced = 1 and whoplaced = Side]
+    C-A-S_Q (highlight)
+    C-A-S_A (swap with "placedtile") (preserve state) (fire-after-swap: C-A-S_A) 
+      now as "placedtile"
+        Inherrits Rotation, and Highlight states from "anytile"
+        C-A-S_A (sets whoplaced to "LANG_Red")
+
+"placedtile" gets a trigger for C-A-S_P
+  C-A-S_U (clears highlight)
+  C-A-S_PERIOD (makes this "already placed")
+
+
+Process of tiles getting placed
+  START with "anytile"
+  Put "anytile" onto the table
+  Trigger a CTRL-P on "anytile" (might be from selected, might be from "Finish move")
+    globally clears any highlights from tiles that match [isplaced = 1 and whoplaced = Side] (previously placed tiles)
+    "anytile" gets highlighted (the proper color)
+    "anytile" gets swapped with "placedtile" and triggers the whoplaced property
+
+  Now we have a highlighted "placedtile" with [isplaced = 1] and [whoplaced = Side]
+    this tile gets cleared the next time that Side places a tile
+
+Finish Move (is triggered globaly by CTRL-F)
+ - Causes any tiles (on the table) that have not been placed (isplaced = 0) to be "placed" (CTRL-P)
+ - Announces the move is finished (chatter message)
+

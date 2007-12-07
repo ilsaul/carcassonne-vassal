@@ -1,0 +1,44 @@
+body {
+}
+
+.guide_title {
+  font-size: 2.5em;
+}
+
+.guide_section_header {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+.guide_section_data {
+  margin-left: 25px;
+}
+
+.guide_section_data p {
+}
+
+.guide_subsection {
+  margin-left: 15px;
+}
+
+.guide_subheader {
+  /* float: left; */
+  text-decoration: underline;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.guide_subdata {
+  font-size: .8em;
+  padding-bottom: 10px;
+}
+
+.controlkey {
+  font-size: .75em;
+  font-weight: bold;
+  font-family: Courier New;
+  color: #66B;
+}
+

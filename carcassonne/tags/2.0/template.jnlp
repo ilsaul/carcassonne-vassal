@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<jnlp codebase="file:/c:/vassal-3.0/" href="vassal-3.0.jnlp" spec="1.0+">
+  <information>
+    <title>VASSAL 3.0</title>
+    <vendor>Rodney Kinney</vendor>
+    <homepage href="http://www.vassalengine.org"/>
+    <description kind="one-line">Internet-enabled boardgames</description>
+    <description kind="short">A general-purpose tool for designing and playing human-vs-human, turn-based games over the internet</description>
+    <icon href="lib/icon.gif"/>
+    <shortcut online="false">
+      <desktop/>
+    </shortcut>
+    <offline-allowed/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se max-heap-size="512m" version="1.5+"/>
+    <jar href="lib/Vengine.jar"/>
+    <jar href="lib/docs.jar"/>
+    <jar href="lib/batik.jar"/>
+    <jar href="lib/wizard.jar"/>
+    <jar href="lib/browserLauncher.jar"/>
+  </resources>
+  <application-desc main-class="VASSAL.launch.Main">
+    <argument>-extract</argument>
+    <argument>/docsInfo</argument>
+    ${arguments}
+  </application-desc>
+</jnlp>

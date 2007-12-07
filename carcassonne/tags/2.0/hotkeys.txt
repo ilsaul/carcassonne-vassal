@@ -1,0 +1,91 @@
+A-S    F1   Add R1 tiles **GLOBAL
+A-S    F10  Add GQ tiles **GLOBAL
+A-S    F2   Add IC tiles **GLOBAL
+A-S    F3   Add TB tiles **GLOBAL
+A-S    F4   Add KG tiles **GLOBAL
+A-S    F5   Add CR tiles **GLOBAL
+A-S    F6   Add CO tiles **GLOBAL
+A-S    F7   Add PD tiles **GLOBAL
+A-S    F8   Add R2 tiles **GLOBAL
+A-S    F9   Add TT tiles **GLOBAL
+C      0    Increase your score by ten
+C      1    Increase your score by one
+C      2    Increase your score by two
+C      3    Increase your score by three
+C      4    Increase your score by four
+C      5    Increase your score by five
+C      6    Increase your score by six
+C      7    Increase your score by seven
+C      8    Increase your score by eight
+C      9    Increase your score by nine
+C      ;    Clear movement trail on dragon
+C      =    Report all scores
+C      F    Finished with move (Implictly places all tiles on table)
+C      F1   Display SVN Info
+C      G    Toggle Game Window
+C      P    Place all tiles on the table (also can be called from a tile)
+C      R    Manual return of supply token to player's supply
+C      S    Toggle Setup Window
+C      T    Toggle TileStacks Window
+C      V    Toggle RiverTiles Window
+C      [    Decrease score modifier by 50 (on score meeple)
+C      [    Rotate tiles CCW
+C      \    Reset score modifier (on score meeple)
+C      ]    Changes state dynamic property (in setup buttons)
+C      ]    Increase score modifier by 50 (on score meeple)
+C      ]    Rotate tiles CW
+C-A-S  "    Display the reposition message (applies to all with proto "reposition")
+C-A-S  ,    Send anytile to draw stack
+C-A-S  -    Send anytile to lake stack
+C-A-S  .    Change isplaced value on a placed tile from 1 to 2
+C-A-S  .    Sends any token to the Automove Deck (not sure why this is needed, but it is)
+C-A-S  /    Initial grey tile placement (called from CTRL-P)
+C-A-S  =    Send anytile to spring stack
+C-A-S  A    Set whoplaced to red
+C-A-S  B    Automatic return of extra tokens to the right extra tokens deck (preceed with C-A-S-.)
+C-A-S  B    Automatic return of score meepls to score track (position zero) (preceed with C-A-S-.)
+C-A-S  B    Automatic return of supply token to player's supply (preceed with C-A-S-.)
+C-A-S  B    Initial yellow tile placement (called from CTRL-P)
+C-A-S  C    Initial green tile placement (called from CTRL-P)
+C-A-S  D    Set whoplaced to green
+C-A-S  E    Enable green hightlight (on tile)
+C-A-S  E    Sent to Green's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  F    Set whoplaced to blue
+C-A-S  F1   Remove all red pieces **GLOBAL
+C-A-S  F2   Remove all black pieces **GLOBAL
+C-A-S  F3   Remove all green pieces **GLOBAL
+C-A-S  F4   Remove all blue pieces **GLOBAL
+C-A-S  F5   Remove all yellow pieces **GLOBAL
+C-A-S  F6   Remove all grey pieces **GLOBAL
+C-A-S  G    Set whoplaced to yellow
+C-A-S  H    Set whoplaced to grey
+C-A-S  I    Insert tokens to the game WITHOUT REPORTING THEM! (equates to a copy of the final bounce return to deck)
+C-A-S  J    Calls CAS_I, followed by CAS_K (essentially adds the token to the game)
+C-A-S  K    Sets the "added_to_game" property of addabletoken
+C-A-S  M    Triggered on pieces that move to the game window
+C-A-S  M    Triggered on pieces that move to the main map
+C-A-S  M    Triggered on pieces that move to the rivertiles window
+C-A-S  M    Triggered on pieces that move to the tilestacks window
+C-A-S  N    Triggered on tokens that move to ANY map that is NOT the Main Map
+C-A-S  P    On "anytile" trigger C-A-S_P on every tile with isplaced = 1
+C-A-S  P    On "placedtile" clears highlight and changes isplaced to 2
+C-A-S  Q    Enable red hightlight (on tile)
+C-A-S  Q    Sent to Red's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  R    Enable blue hightlight (on tile)
+C-A-S  R    Sent to Blue's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  R    Triggers global hot key for addition/removal (in setup buttons)
+C-A-S  S    SWAP mini token <=> normal 
+C-A-S  S    Set whoplaced to black
+C-A-S  T    Enable yellow hightlight (on tile)
+C-A-S  T    Sent to Yellow's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  U    Remove the highlight from a placed tile
+C-A-S  V    Initial blue tile placement (called from CTRL-P)
+C-A-S  W    Enable black hightlight (on tile)
+C-A-S  W    Sent to Black's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  X    Initial black tile placement (called from CTRL-P)
+C-A-S  Y    Enable grey hightlight (on tile)
+C-A-S  Y    Sent to Grey's chit jail/piles/towers/kingrobber (preceed with C-A-S-.)
+C-A-S  Z    Initial red tile placement (called from CTRL-P)
+C-A-S  \    Send anytile to river draw stack
+C-S    D    Remove piece from the game (also see prototype called "removable")
+C-S    R    Takes action & Disables button (fired by ActionButton in setup buttons) {Fires CAS-R & C-]}
