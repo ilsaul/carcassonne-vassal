@@ -1,0 +1,15 @@
+SupplyWindow coordinates:
+  pos1  30 x 32
+  pos2  72 x 32
+  pos3 114 x 32
+  pos4 156 x 32
+  pos5 198 x 32
+  hut1 240 x 32
+  hut2 282 x 32
+  tile 360 x 60
+TileStacks coordinates:
+  Draw   70 x  70
+  Stage 190 x  70
+  Bonus 310 x  70
+ScoreTrack
+  pos 0 432 x 287
