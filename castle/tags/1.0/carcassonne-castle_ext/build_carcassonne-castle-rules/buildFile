@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VASSAL.build.module.ModuleExtension module="Carcassonne:The Castle" moduleVersion=" Release 1.0 " vassalVersion="2.8" version=" Release 1.0 $Id: $">
+<VASSAL.build.module.ExtensionElement target="VASSAL.build.module.Documentation">
+<VASSAL.build.module.documentation.HelpFile fileName="rules.html" fileType="archive" title="Rules"/>
+</VASSAL.build.module.ExtensionElement>
+</VASSAL.build.module.ModuleExtension>

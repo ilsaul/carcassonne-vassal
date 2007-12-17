@@ -1,0 +1,119 @@
+Game window coords:
+
+ Draw:  70x70
+Stage: 210x70
+
+  White Keep:  37x178
+White Meeple: 105x181
+ White Bonus:  46x245
+  Black Keep: 173x178
+Black Meeple: 241X181
+ Black Bonus: 185x245
+
+
+Bonus distro:
+
+  On Distro Button:
+    Action button which calls CTRL-Q
+      GKC triggered by CTRL-Q which calls
+        ACS-F1 for ALL Bonus Tiles
+      Also has a trigger for CTRL-Q which deletes the button (preventing double setups)
+
+  GKC (ACS-F1 Calls CS-= for All BonusTiles) -- this forces all counters to inc
+
+  Trigger (ACS-F1 When BonusCount = 1)
+    Calls CTRL-F
+    Calls AS-F1
+
+  Trigger (ACS-F1 When BonusCount = 2)
+    Calls CTRL-F
+    Calls AS-F2
+
+  Trigger (ACS-F1 When BonusCount = 3)
+    Calls CTRL-F
+    Calls AS-F3
+
+  Trigger (ACS-F1 When BonusCount = 4)
+    Calls CTRL-F
+    Calls AS-F4
+
+  Trigger (ACS-F1 When BonusCount = 5)
+    Calls CTRL-F
+    Calls AS-F5
+
+  Trigger (ACS-F1 When BonusCount = 6)
+    Calls CTRL-F
+    Calls AS-F6
+
+  Trigger (ACS-F1 When BonusCount = 7)
+    Calls CTRL-F
+    Calls AS-F7
+
+  Trigger (ACS-F1 When BonusCount = 8)
+    Calls CTRL-F
+    Calls AS-F8
+
+  Trigger (ACS-F1 When BonusCount = 9)
+    Calls CTRL-F
+    Calls AS-F9
+
+  Trigger (ACS-F1 When BonusCount = 10)
+    Calls CTRL-F
+    Calls AS-F10
+
+  Trigger (ACS-F1 When BonusCount = 11)
+    Calls CTRL-F
+    Calls AS-F11
+
+  Trigger (ACS-F1 When BonusCount = 12)
+    Calls CTRL-F
+    Calls AS-F12
+
+  Trigger (ACS-F1 When BonusCount = 13)
+    Calls CTRL-F
+    Calls AS-3 (this is the "odd" send to)
+
+  Trigger (ACS-F1 When BonusCount > 13)
+    Calls CS-R (removes from game)
+
+  Property Change (Incs local BonusCount by 1)
+    via CS-=
+
+  Sendto Bonus 1
+    via AS-F1
+
+  Sendto Bonus 2
+    via AS-F2
+
+  Sendto Bonus 3
+    via AS-F3
+
+  Sendto Bonus 4
+    via AS-F4
+
+  Sendto Bonus 5
+    via AS-F5
+
+  Sendto Bonus 6
+    via AS-F6
+
+  Sendto Bonus 7
+    via AS-F7
+
+  Sendto Bonus 8
+    via AS-F8
+
+  Sendto Bonus 9
+    via AS-F9
+
+  Sendto Bonus 10
+    via AS-F10
+
+  Sendto Bonus 11
+    via AS-F11
+
+  Sendto Bonus 12
+    via AS-F12
+
+  Sendto Bonus 13
+    via AS-3
