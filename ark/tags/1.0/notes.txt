@@ -1,0 +1,16 @@
+Brian's color preference is: Blue / Green / Black / Red / Yellow
+
+Coordinates:
+
+  Meeple 1:  25 x  31
+  Meeple 2:  65 x  31
+  Meeple 3: 105 x  31
+  Meeple 4: 145 x  31
+  Meeple 5: 185 x  31
+  Meeple 6: 225 x  31
+  Meeple 7: 265 x  31
+   Prophet: 304 x  26
+
+       Ark:  42 x  26
+
+   Score 0: 420 x 310
